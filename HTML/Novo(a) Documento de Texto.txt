@@ -1,0 +1,11 @@
+contas:int; aluguel:int luz:int; net:int comida:int; agiota:int;
+valor_da_soma: int
+
+contas = int (input("digite o valor das suas contas:"))
+aluguel = int (input("digite o valor do seu aluguel;"))
+luz = int (input("digite o valor da sua luz:"))
+net = int (input("digite o valor do sua net:"))
+comida = int (input("digite o valor da sua comida:"))
+agiota = int (input("digite o valor do seu agiota"))
+valor_da_soma  
+print("a soma entre {}"
