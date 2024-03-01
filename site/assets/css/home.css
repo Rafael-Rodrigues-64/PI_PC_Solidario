@@ -6,24 +6,25 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 
 header {
     height: 132px;
     background-color: rgb(76, 76, 165);
+    color: #fff;
 }
 
 .header {
-    max-width: 1140px;
+    max-width: 1250px;
     height: 132px;
     display: flex;
-    background-color: brown;
     margin: auto;
     align-items: center;
 }
 
 .logo {
-    width: 60px;
+    width: 120px;
     background-color: aqua;
 }
 
@@ -33,13 +34,125 @@ header {
 }
 
 .menu {
-    background-color: blueviolet;
     flex: 1;
-    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul, 
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li a { 
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 40px;
+    transition: all 0.5s linear;
+}
+
+.ativo a:hover {
+    color: #F7941E;
+}
+
+ .ativo a:active, a:focus {
+    color: #F7941E;
 }
 
 .icones {
-    width: 120px;
+    width: 200px;
     background-color: blue;
-
 }
+
+.banner {
+    height: calc(100vh - 132px); /* vh tamanho total do monitor, qualquer, menos(-) header*/
+    background-color: #333; /* Enquanto a imagem não carrega aparecerá esse fundo */
+
+    /* background: url(../images/ilha-grande-rio-de-janeiro-capa2019-01.jpg);
+    background-size: cover;
+    background-position: center; */
+
+    color: #fff;
+    overflow: hidden; /* Tudo que passar do tamanho do .banner vai ser ignorado.
+                     Fazendo com isso desaparecer a barra de rolagem */
+}
+
+.banner .sliders {
+    width: 1000vw; /* Suporta até 10 Sliders. */
+    height: 100%;
+    color: blue;
+}
+
+.banner .slide {
+    width: 100vw; /* 1 Slide. Largura da tela */
+    height: 100%;
+    display: inline-block; /* Deixa os sliders laddo a lado e não abaixo.
+                            Além de manter as proporcionalidades */
+}
+
+.banner .slidearea {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner .slidearea.slidearea1 {
+    background: url(../images/ilha-grande-rio-de-janeiro-capa2019-01.jpg);
+    background-size: cover;
+}
+
+.banner .slidearea.slidearea2 {
+    background: url(../images/paisagem-natural.jpg);
+    background-size: cover;
+}
+
+.banner .slidearea.slidearea3 {
+    background: url(../images/pexels-jam.jpg);
+    background-size: cover;
+    /*object-fit: fill;*/
+    
+}
+
+.banner h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.banner .sliders-pointers {
+    width: 100vw; /* A área inteira. Para o acréscimo de mais futuramente */
+    height: 20px;
+    position: absolute; /* Vai aparecer independente da área */
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #F7941E;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #F7941E;
+}
+
+
+
+
+
+
+
