@@ -183,7 +183,7 @@ Altura área notícias 2 parte (conteúdo): 386px
 .section-noticias--areas {
     width: 345px;
     height: 594px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .section-noticias--areas.area1,
@@ -214,7 +214,24 @@ Altura área notícias 2 parte (conteúdo): 386px
 .section-noticias--areas.area1 .noticias-title-desc-mais {
     flex: 1;
     padding: 0 30px;
-    background-color: red;
+    margin-top: 25px;
+}
+
+.section-noticias--areas.area1 .noticias-title-desc-mais .title, .mais {
+    text-decoration: none;
+}
+
+.section-noticias--areas.area1 .noticias-title-desc-mais h2 {
+    color: #044b6c;
+    font-size: 21px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.section-noticias--areas.area1 .noticias-title-desc-mais p {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #777;
 }
 
 .section-noticias--areas.area1 .noticias-data {    
