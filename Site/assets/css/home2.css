@@ -29,8 +29,8 @@ header {
 }
 
 .logo img {
-    width: 60px;
-    background-color: #39aae1;
+     
+    /*width: 60px;*/
 }
 
 .menu {
@@ -75,18 +75,18 @@ nav a:hover {
 }
 
 #slideshow {
-    height: 750px;
+    height: 550px;
     background-color: #CCC;
     overflow: hidden;
 }
 
 .slideshowarea {
-    height: 750px;
+    height: 550px;
     width: 300vw;
     transition: all 1.8s;
 }
 .slide {
-    height: 750px;
+    height: 550px;
     width: 100vw;
     display: inline-block;
     background-size: cover;
