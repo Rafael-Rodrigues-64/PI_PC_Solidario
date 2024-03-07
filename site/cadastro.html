@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cadastre-se</title>
+    <link href="assets/css/cadastro.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- <section class="barra_topo">
+    <div class="logo">
+      
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li>aaaaaaaa</li>
+          <li>bbbbbbbb</li>
+          <li>cccccccc</li>
+          <li>dddddddd</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="icones">
+      
+    </div>
+  </section>  -->
+  
+  <section class="estrutura">
+    <header class="titulo">
+        <h1>Cadastre-se</h1>
+        <p>Já tem conta? <a href="#">Faça login aqui</a></p>
+    </header>
+    <form class="form">
+      <fieldset id="dados_pessoais"><legend>Dados Pessoais:</legend>
+        <label for="matricula">Matrícula:*</label><br>
+        <input type="number" id="matricula" name="matricula" placeholder="Informe sua matrícula" required><br><br>
+        <label for="nome">Nome:*</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Qual seu nome?" required><br><br>
+        <label for="data_nascimento">Data de Nascimento:*</label><br>
+        <input type="date" id="data_nascimento" name="data_nascimento" placeholder="dd/mmmm/aa" required>
+      </fieldset><br>
+      <fieldset><legend>Dados de Contato:</legend>
+        <label for="celular">Celular:*</label><br>
+        <input type="tel" id="celular" name="celular" placeholder="(99) 9999-9999" required><br>
+        <p><label for="email">E-mail:*</label>
+        <input type="email" id="email" name="email" placeholder="@edu.pa.senac.br" required>&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="confirmar_email">Confirme seu E-mail:*</label>
+        <input type="email" id="confirmar_email" name="email" placeholder="@edu.pa.senac.br" required></p>
+      </fieldset><br>
+      <fieldset><legend>Dados de Acesso:</legend>
+        <p><label for="senha">Digite uma Senha:*</label>
+        <input type="password" id="senha" name="senha" placeholder="Informe Uma Senha" required> 
+        &nbsp;&nbsp;&nbsp;&nbsp;  <!-- o "&nbsp;" é uma entidade de caractere, e está adicionando espaço entre os elementos no HTML sem alterar a aparência visual, "&nbsp;".-->
+        <label for="senha">Repita a Senha:*</label>
+        <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Repita a Senha" required></p>
+      </fieldset>
+    </form>
+  </section>  
+  <footer>
+
+  </footer> 
+</body>
+</html>
