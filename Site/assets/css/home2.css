@@ -13,7 +13,12 @@ header {
     height: 120px;
     display: flex;
     justify-content: center;
-    background-color: rgb(76, 76, 165);
+    background: linear-gradient(-110deg, #58c0c5, #004aad);
+    /* Opções de degradê em graus*/
+    /* 90, 180, 135, 
+
+     */
+    /* background-color: rgb(76, 76, 165); Cor anterior*/
 }   
 
 .header {
@@ -26,11 +31,6 @@ header {
     display: flex;
     align-items: center;
     width: 100px;
-}
-
-.logo img {
-     
-    /*width: 60px;*/
 }
 
 .menu {
@@ -66,7 +66,7 @@ nav a:hover {
 .icons {
     display: flex;
     align-items: center;
-    background-color: #39aae1;
+    
 }
 
 .icons img {
@@ -134,7 +134,7 @@ nav a:hover {
 /* default Área Notícias e Área impacto social */
 .default {
     padding-top: 98px;
-    background-color: aliceblue;
+    background-color: rgb(219, 225, 230);
 }
 
 .default .section-title {
@@ -180,14 +180,12 @@ Altura área notícias 2 parte (conteúdo): 386px
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 70px;
-    background-color:rgba(1, 1, 1, 0.2)
 }
 
 .section-noticias--areas {
     width: 345px;
     height: 594px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
     transition: all 0.6s;
 }
 
@@ -219,13 +217,13 @@ Altura área notícias 2 parte (conteúdo): 386px
  .noticias-img img {
     width: 100%;
     border-radius: 8px 8px 0px 0px;
-    
 }
 
 .noticias-title-desc-mais {
     flex: 1;
     padding: 0 22px;
     margin-top: 22px;
+    background-color: #FDF3DD;
 }
 
 .noticias-title-desc-mais h2 a,
@@ -264,11 +262,16 @@ Altura área notícias 2 parte (conteúdo): 386px
     font-weight: 900;
 }
 
-.noticias-data span {
-    display: block;
+.noticias-data {
+    border-top: 1px solid #ccc;
+    border-radius: 0px 0px 8px 8px;
+    background-color: #FDF3DD;
+}
+
+.noticias-data span {    
+    display: inline-block;
     font-size: 13px;
     color: #7a7a7a;
-    border-top: 1px solid #ccc;;
     padding: 15px 25px;
     text-align: left;
 }
