@@ -38,13 +38,8 @@ section,.card{
 
 
 .principal{
-    
-   
-    
-    padding-left: 100px;
-    padding: 10%;
+    padding: 5%;
     float: inline-end;
-    margin-top: 10%;
-    text-align:left; 
-
+    position: relative;
+   
 }
