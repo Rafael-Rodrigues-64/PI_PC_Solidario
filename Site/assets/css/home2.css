@@ -25,11 +25,10 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    width: 100px;
 }
 
 .logo img {
-     
+    width: 200px; 
     /*width: 60px;*/
 }
 
