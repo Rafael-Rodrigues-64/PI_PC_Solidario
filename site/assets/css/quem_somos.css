@@ -1,45 +1,57 @@
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 body {
     background-color: #f6f5f7;
     font-family: Arial, sans-serif; 
-    font-size: 20px;
-    margin-left: 50px; 
+    font-size: 18px;
+    color: #54595f;
       
 }
+.principal{
+   display: flex;
+   justify-content: center;
+   background-color: aqua;
+  
+    
+}
+.titulosub{
+    margin-top: 50px;
+    width: 1200px;
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: column;
 
-.pr{
-    margin-right: 60%;
-    float: left;
-   
+    }
+
+.titulo{
+    background-color: brown;
+    display: flex;
+
+
+    
+}
+.titulo img{
+    width: 150px;
+}
+.subtitulo{
+    background-color: chartreuse;
+
 }
 h1 {
     color: #ff7b00;
     font-weight: bold;
     font-size: 60px;
     padding: 10px;
-    float: left;
-  
-}
-section,.card{
-    padding: 20px;
-    margin: center;
-    text-align: left; 
     
   
 }
 
-.card{
-    position: relative;
-    float:inline-end;
-   
-}
 
 
-.principal{
-    padding: 5%;
-    float: inline-end;
-    position: relative;
-   
-}
+
+
