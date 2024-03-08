@@ -1,6 +1,7 @@
-body{
-     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 300px;
+    margin-right: 300px;
     padding: 0px;
     background-color:rgb(255, 255, 255);
 }
@@ -10,30 +11,44 @@ body{
     display: inline-block;
     justify-content: center;
     /*background-color: rgb(76, 76, 165);*/
-    background-image:linear-gradient(45deg, rgb(5, 178, 247), rgb(20, 20, 143));
+    background-image:linear-gradient(45deg, rgb(89, 76, 173), rgb(70, 161, 235));
     box-sizing: border-box;
-}
+    width: 12000px;
+}   
+
+
 
 .header {
     width: auto;
     display: flex;
     justify-content: space-between;
     width: 1520px;
-    /*padding-left: 50px;*/
+    padding-left: 50px;
     padding-right: 50px;
 }
 
+.icons{
+    display: flex;
+    width: 20px;
+    padding-top: 50px;
+    margin-right: 170px; 
+   
+
+}
+
+
 .logo {
     display: flex;
-    align-items: center;
-    width: 100px;
+    align-items: left;
+    width: 0px;
     
 }
 
 .logo img {
-    width: 80px;
-    background-color: #39aae1;
-    border-radius:30px;
+    width: 200px;
+    height: 100px;
+     /* background-color: #39aae1; */ 
+    border-radius:10px;
 }
 
 .menu {
@@ -63,20 +78,22 @@ nav a{
 }
 
 nav a:hover {
-    background-color: #39aae1;
-    color: #F7941E;
+    background-color: #87c1df;
+    color:black;
 }
 
-.icons {
+
+
+/* .icons {
     display: flex;
     align-items: center;
     /*background-color:  rgb(76, 76, 165);*/
-    background-image:linear-gradient(45deg, rgb(76, 76, 165));
-}
+    /* background-image:linear-gradient(45deg, rgb(76, 76, 165));
+} */ 
 
 .icons img {
-    width: 30px;
-    margin-left: 10px;
+    width: 45px;
+    margin-left: 50px;
 }
 
 header{
@@ -89,31 +106,39 @@ header{
 h1{
     font-weight: bold;
     font-size: 60px;
+    
 }
+
 
 section{
     padding: 20px;
+    margin:auto;
+    text-align: center;
 }
 
-cards{
-
+.cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    /* width: 250px;*/
-    /*text-align: left;*/
+    /* justify-content: space-around; */
+    align-items:center;
+    width: 1800px;
+    padding: 10px;
+    margin: auto;
+    padding-left: 100px;
+    
 }
 
 .card{
-    width: 260px;
-    margin:90px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 5px black (0,0,0,0.1);
+    width: 350px;
+    margin:30px;
+    padding: 25px;
+    border: 1px solid #aaa7a7;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black (0,0,0,0.1);
     text-align: center;
     background-color: antiquewhite;
+    justify-content: space-around;
+    
 }
 
 .card img{
@@ -121,6 +146,7 @@ cards{
     width: 100%;
     border-radius: 5px;
     margin-bottom: 0px;
+
 }    
 
 
