@@ -131,24 +131,18 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* default Área Notícias e Área impacto social */
+/* Área Notícias (Sistema)...*/
 .default {
     padding-top: 98px;
     background-color: rgb(219, 225, 230);
+    margin-bottom: 50px;
 }
 
-.default .section-title {
-    font-size: 40px;
+.default .section-title h2{
+    color: #F7941E;
+    font-size: 60px;
     font-weight: 700;
     text-shadow: 0px 1px 0px #555;
-}
-
-.default .section-title.noticias h2 {
-    color: #F7941E;
-}
-
-.default .section-title.impctSocial h2 { /* Área impacto social */
-    margin-bottom: 70px;
 }
 
 .default .section-desc {
@@ -166,8 +160,24 @@ nav a:hover {
     margin: auto;
 }
 
+.default_2 { /* Área Impacto Social (Sistema)...*/
+    background-color: rgb(23, 61, 94);
+    margin-bottom: 50px;
+}
 
+.default_2 .section-title h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 0px 1px 0px #555;
+    margin-bottom: 30px;
+}
 
+.default_2 .section-title,
+.default_2 .section-body {
+    max-width: 1200px;
+    margin: auto;
+}
 
 
 /* CSS DE ÁREAS ESPECÍFICAS 
@@ -278,17 +288,19 @@ Altura área notícias 2 parte (conteúdo): 386px
 
 
 
-/*
-.pointer {
-    width: 25px;
-    height: 25px;
-    float: left;
-    margin-right: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    border-radius: 13px;
-    cursor: pointer;
-}*/
-/*
-.pointer.active {
-    background-color: rgba(0, 0, 0, 0.1);
-}*/
+/* Área Impacto Social (Específica)...*/
+.default_2 .section-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 55px;
+    
+}
+
+.default_2 .item {
+    background-color: blue;
+    border-radius: 10px;
+    max-width: 258px;
+    min-height: 155px;
+    color: #fff;
+    
+}
