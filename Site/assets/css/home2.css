@@ -33,6 +33,10 @@ header {
     width: 100px;
 }
 
+.logo img {
+    width: 245px;
+}
+
 .menu {
     display: flex;
     align-items: center;
