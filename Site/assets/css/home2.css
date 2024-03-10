@@ -15,7 +15,7 @@ header {
     justify-content: center;
     background: linear-gradient(-110deg, #58c0c5, #004aad);
     /* Opções de degradê em graus*/
-    /* 90, 180, 135, 
+    /* 90, 110, -110 180, 135, 
 
      */
     /* background-color: rgb(76, 76, 165); Cor anterior*/
@@ -165,12 +165,12 @@ nav a:hover {
 }
 
 .default_2 { /* Área Impacto Social (Sistema)...*/
-    background-color: rgb(23, 61, 94);
+    
     margin-bottom: 50px;
 }
 
-.default_2 .section-title h2{
-    color: #fff;
+.default_2 .section-title h2 {
+    color: #333;
     font-size: 60px;
     font-weight: 700;
     text-shadow: 0px 1px 0px #555;
@@ -200,7 +200,8 @@ Altura área notícias 2 parte (conteúdo): 386px
     width: 345px;
     height: 594px;
     border-radius: 8px 8px 8px 8px;
-    transition: all 0.6s;
+    box-shadow: 0px 0px 2px #333;
+    transition: all 0.7s;
 }
 
 .section-noticias--areas:hover  {
@@ -295,16 +296,51 @@ Altura área notícias 2 parte (conteúdo): 386px
 /* Área Impacto Social (Específica)...*/
 .default_2 .section-body {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 55px;
-    
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 22px;
 }
 
 .default_2 .item {
-    background-color: blue;
-    border-radius: 10px;
-    max-width: 258px;
-    min-height: 155px;
-    color: #fff;
-    
+    background: linear-gradient(-135deg, #58c0c5, #004aad);
+    color: #333;
+    box-shadow: 3px 3px 4px #333;
+    font-size: 20px;
+    border-radius: 25px;
+    min-height: 157px;
+    /* Opções de degradê em graus*/
+    /* 90, 110, -110, 180, 135 */ 
+}
+
+.default_2 .itemarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 12;
+    padding: 10px;
+}
+
+.default_2 .itemarea img {
+    width: 67px;
+}
+
+.default_2 .itemarea span {
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.default_2 .itemarea img, span {
+    margin-bottom: 18px;
+}
+
+.default_2 .itemarea p {
+    font-size: 19px;
+}
+
+
+@media (max-width: 800px) {
+    .default_2 .section-body {
+        grid-template-columns: 1fr;
+    }
 }
