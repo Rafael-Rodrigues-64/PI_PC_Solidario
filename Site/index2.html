@@ -6,7 +6,7 @@
     <title>PC Solidário2</title>
     <link rel="shortcut icon" href="assets/images/logopc-solidario_reduz_tranp.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/home2.css" type="text/css">
-    <script type="text/javascript" src="assets/javascript/script_tempora.js"></script>
+    <script type="text/javascript" src="assets/javascript/script.js" defer></script>
 
 </head>
 <body>
@@ -35,32 +35,41 @@
     </header>
 
     <main>
-        <section>
-            <div id="slideshow"> <!-- Carrosel -->   
-                <div class="slideshowarea">
-                    <div class="slide" style="background-image: url(
-                        assets/images/Exercício_Baner_Compras.png);">
-                        <div class="slidearea">
-                            <h2>Dream Team<br>&#169; Todos os direitos Reservados</h2>
-                        </div>
-                    </div><div class="slide" style="background-image: url(
-                        assets/images/ilha-grande-rio-de-janeiro-capa2019-01.jpg);">
-                        <div class="slidearea">
-                            <h2>Dream Team2<br>&#169; Todos os direitos Reservados</h2>
-                        </div>
-                    </div><div class="slide" style="background-image: url(
-                        assets/images/paisagem-natural.jpg);">
-                        <div class="slidearea">
-                            <h2>Dream Team3<br>&#169; Todos os direitos Reservados</h2>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="sleders-pointers">
-                    <div class="pointer active"></div>
-                    <div class="pointer"></div>
-                    <div class="pointer"></div>
-                </div>
-            </div>
+        <section class="slider"> <!-- Carrosel -->
+                <div class="slider-content">
+                    <!-- assets/images/Exercício_Baner_Compras.png -->
+                    <!-- assets/images/ilha-grande-rio-de-janeiro-capa2019-01.jpg -->
+                    <!-- assets/images/paisagem-natural.jpg -->
+
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+
+                    <div class="slide-box primeiro">
+                        <a href=""><img src="assets/images/Banner_1_550hi.png" alt="slide 1"></a>
+                    </div>
+
+                    <div class="slide-box">
+                        <a href=""><img src="assets/images/banner_550_hi.png" alt="slide 2"></a>
+                    </div>
+
+                    <div class="slide-box">
+                        <a href=""><img src="assets/images/banner_550_hi.png" alt="slide 3"></a>
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+
+                </div>            
         </section>
         
         <section class="default"> 
