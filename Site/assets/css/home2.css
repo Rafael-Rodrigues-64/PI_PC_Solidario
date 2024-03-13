@@ -15,7 +15,7 @@ header {
     justify-content: center;
     background: linear-gradient(-110deg, #58c0c5, #004aad);
     /* Opções de degradê em graus*/
-    /* 90, 180, 135, 
+    /* 90, 110, -110 180, 135, 
 
      */
     /* background-color: rgb(76, 76, 165); Cor anterior*/
@@ -31,6 +31,10 @@ header {
     display: flex;
     align-items: center;
     width: 100px;
+}
+
+.logo img {
+    width: 245px;
 }
 
 .menu {
@@ -74,62 +78,76 @@ nav a:hover {
     margin-left: 15px;
 }
 
-#slideshow {
-    height: 550px;
-    background-color: #CCC;
+section.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 390px;
+    padding: 0 !important;
     overflow: hidden;
 }
 
-.slideshowarea {
-    height: 550px;
-    width: 300vw;
-    transition: all 1.8s;
-}
-.slide {
-    height: 550px;
-    width: 100vw;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-}
-
-
-.slidearea {
-    height: 750px;
+.slider-content {
+    width: 400%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    color: #fff;
 }
 
-.slidearea h2 {
-    margin-top: 50px;
-    font-weight: bold;
-    font-size: 60px;
+.slider-content input {
+    display: none;
 }
 
-.sleders-pointers {
-    width: 98vw;
-    height: 25px;
+.slide-box { /**/
+    width: 25%;
+    height: 390px;
+    position: relative;
+    text-align: center;
+}
+
+.slide-box a img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-manual, .nav-auto {
+    width: 100%;
     position: absolute;
-    margin-top: -50px;
+    margin-top: 26%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
-.pointer {
-    width: 25px;
-    height: 25px;
-    float: left;
-    margin-right: 20px;
+.nav-manual .manual-btn, .nav-auto div {
     border: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 13px;
+    border-radius: 50%;
+    padding: 10px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
-.pointer.active {
-    background-color: rgba(0, 0, 0, 0.2);
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px;
 }
+
+.nav-manual .manual-btn:hover {
+    background-color: #F7941E;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: #F7941E;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
+
 
 /* Área Notícias (Sistema)...*/
 .default {
@@ -161,12 +179,12 @@ nav a:hover {
 }
 
 .default_2 { /* Área Impacto Social (Sistema)...*/
-    background-color: rgb(23, 61, 94);
+    
     margin-bottom: 50px;
 }
 
-.default_2 .section-title h2{
-    color: #fff;
+.default_2 .section-title h2 {
+    color: #333;
     font-size: 60px;
     font-weight: 700;
     text-shadow: 0px 1px 0px #555;
@@ -196,7 +214,8 @@ Altura área notícias 2 parte (conteúdo): 386px
     width: 345px;
     height: 594px;
     border-radius: 8px 8px 8px 8px;
-    transition: all 0.6s;
+    box-shadow: 0px 0px 2px #333;
+    transition: all 0.7s;
 }
 
 .section-noticias--areas:hover  {
@@ -291,16 +310,51 @@ Altura área notícias 2 parte (conteúdo): 386px
 /* Área Impacto Social (Específica)...*/
 .default_2 .section-body {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 55px;
-    
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 22px;
 }
 
 .default_2 .item {
-    background-color: blue;
-    border-radius: 10px;
-    max-width: 258px;
-    min-height: 155px;
-    color: #fff;
-    
+    background: linear-gradient(-135deg, #58c0c5, #004aad);
+    color: #333;
+    box-shadow: 3px 3px 4px #333;
+    font-size: 20px;
+    border-radius: 25px;
+    min-height: 157px;
+    /* Opções de degradê em graus*/
+    /* 90, 110, -110, 180, 135 */ 
+}
+
+.default_2 .itemarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 12;
+    padding: 10px;
+}
+
+.default_2 .itemarea img {
+    width: 67px;
+}
+
+.default_2 .itemarea span {
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.default_2 .itemarea img, span {
+    margin-bottom: 18px;
+}
+
+.default_2 .itemarea p {
+    font-size: 19px;
+}
+
+
+@media (max-width: 800px) {
+    .default_2 .section-body {
+        grid-template-columns: 1fr;
+    }
 }
