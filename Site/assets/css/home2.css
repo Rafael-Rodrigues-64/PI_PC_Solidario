@@ -81,7 +81,7 @@ nav a:hover {
 section.slider {
     margin: 0 auto;
     width: 100%;
-    height: 390px;
+    height: 550px;
     padding: 0 !important;
     overflow: hidden;
 }
@@ -98,7 +98,7 @@ section.slider {
 
 .slide-box { /**/
     width: 25%;
-    height: 390px;
+    height: 550px;
     position: relative;
     text-align: center;
 }
