@@ -16,7 +16,7 @@ body {
     margin: 80px auto 0;
     width: 80%;
     text-align: center;
-    color: white;   
+    color: white;
 }
 
 .hero-content h1 {
@@ -33,8 +33,6 @@ body {
     padding: 15px;
     border-bottom: 2px solid;
 }
-
-
 
 .hero nav ul {
     margin: 9px 50px 0 0;
@@ -64,7 +62,72 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.container-noticias {
+    display: flex;
+}
+
+aside {
+    max-width: 275px;
+    width: 275px;
+    margin: 20px 15px;
+}
+
+.widget {    
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+
+.widget .widget-titulo {
+    height: 30px;
+    border-bottom: 1px solid #CCC;
+    background-color: #DDD;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.widget .widget-conteudo {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+/* 1 - facebook like box, 2- Facebook Like Box - Social Plugins, 3 - plugin de Página
+   4 - Receber código, 5 - IFrame*/
+.widget .widget-conteudo .publicidade {
+    width: 273px;
+}
+
+.widget .widget-conteudo .publicidade img {
+    width: 100%;
+}
+
+.widget-conteudo.icons img {
+    width: 20px;
+}
+
+.widget-conteudo.icons img {
+    width: 20px;
+}
+
+.widget .widget-conteudo .noticia-item {
+    font-size: 14px;
+    margin: 0px 10px;
+    padding: 10px 0px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+.widget .widget-conteudo .noticia-item  a {
+    text-decoration: none;
+    color: #000;
+}
+
+.widget .widget-conteudo p {
+    margin: 0;
+}
+
 .container {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
