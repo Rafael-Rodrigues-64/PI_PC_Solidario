@@ -149,14 +149,21 @@ section.slider {
 }
 
 
+.banner-main-defaults {
+    background-image: url('../images/banner-main.png');
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
 /* Área Notícias (Sistema)...*/
 .default {
     padding-top: 98px;
-    background-color: rgb(219, 225, 230);
     margin-bottom: 50px;
 }
 
-.default .section-title h2{
+.default .section-title h2 {
     color: #F7941E;
     font-size: 60px;
     font-weight: 700;
@@ -179,12 +186,12 @@ section.slider {
 }
 
 .default_2 { /* Área Impacto Social (Sistema)...*/
-    
+    background-color: rgba(0, 0, 0, 0.8);
     margin-bottom: 50px;
 }
 
 .default_2 .section-title h2 {
-    color: #333;
+    color: #fff;
     font-size: 60px;
     font-weight: 700;
     text-shadow: 0px 1px 0px #555;
