@@ -150,7 +150,7 @@ section.slider {
 
 
 .banner-main-defaults {
-    background-image: url('../images/banner-main.png');
+    background-image: url('../images/banner-main_1.png');
     background-size: cover; 
     background-attachment: fixed;
     background-position: center;
@@ -186,7 +186,7 @@ section.slider {
 }
 
 .default_2 { /* Área Impacto Social (Sistema)...*/
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
     margin-bottom: 50px;
 }
 
@@ -259,7 +259,8 @@ Altura área notícias 2 parte (conteúdo): 386px
     flex: 1;
     padding: 0 22px;
     margin-top: 22px;
-    background-color: #FDF3DD;
+    /*background-color: #FDF3DD;*/
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .noticias-title-desc-mais h2 a,
