@@ -26,33 +26,27 @@ header {
     justify-content: space-between;
     width: 1200px;
 }
-
 .logo {
     display: flex;
     align-items: center;
     width: 100px;
 }
-
 .logo img {
     width: 245px;
 }
-
 .menu {
     display: flex;
     align-items: center;
 }
-
 nav ul,
 nav li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 nav ul {
     display: flex;
 }
-
 nav a{
     display: block;
     padding: 15px;
@@ -60,9 +54,8 @@ nav a{
     text-transform: uppercase;
     color: #fff;
     font-weight: 600;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
-
 nav a:hover {
     color: #F7941E;
 }
@@ -70,12 +63,24 @@ nav a:hover {
 .icons {
     display: flex;
     align-items: center;
-    
 }
-
-.icons img {
+.icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
-    margin-left: 15px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: 10px;
+    transition: all 0.6s;
+}
+.icons a:hover {
+    background-color: #F7941E;
+}
+.icons img {
+    width: 20px;
+    height: 20px;
 }
 
 section.slider {
@@ -148,13 +153,14 @@ section.slider {
     margin-left: -50%;
 }
 
-
+.banner-main-defaults--sombra {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 .banner-main-defaults {
-    background-image: url('../images/banner-main_1.png');
+    background-image: url('../images/banner_body.png');
     background-size: cover; 
     background-attachment: fixed;
     background-position: center;
-    
 }
 
 /* Área Notícias (Sistema)...*/
@@ -174,7 +180,8 @@ section.slider {
     font-size: 14px;
     font-weight: 200;   
     margin-top: 10px;
-    color: #54595f;
+    color: #303337;
+    
     text-shadow: 0px 0px 1px #555;
 }
 
@@ -186,8 +193,9 @@ section.slider {
 }
 
 .default_2 { /* Área Impacto Social (Sistema)...*/
-    background-color: rgba(0, 0, 0, 0.4);
-    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
 
 .default_2 .section-title h2 {
@@ -259,8 +267,7 @@ Altura área notícias 2 parte (conteúdo): 386px
     flex: 1;
     padding: 0 22px;
     margin-top: 22px;
-    /*background-color: #FDF3DD;*/
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #FDF3DD;
 }
 
 .noticias-title-desc-mais h2 a,
