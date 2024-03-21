@@ -1,50 +1,26 @@
 
-/* .barra_topo {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  background-color: #6d70d8;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-.logo {
-  height: 80px;
-  width: 100px;
-  background-color: #9a800c;
-}
-
-.menu {
-  height: 80px;
-  background-color: #05531e;
-  
-}
-
-.icones {
-  height: 80px;
-  width: 100px;
-  background-color: #611818; 
-} */
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
 }
 
 header {
+  padding: 2px;
   background-color: #ffc494;
   text-align: center;
-  border-radius: 5px;
   margin-bottom: 20px;
 }
 
 .form input {
   width: 100%;
+  height: 30px;
+  font-size: 20px;
+  
 } 
 
 h1 {
@@ -53,11 +29,19 @@ h1 {
 
 .form {
   background-color: #ffc494;
-  border-radius: 5px;
   padding: 5px;
 
 }
 
 .estrutura {
+  width: 40%;
   margin: 0;
+}
+
+#email, #confirmar_email {
+  width: 233px;
+}
+
+#senha, #confirmar_senha {
+  width: 205px;
 }
