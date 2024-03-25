@@ -40,7 +40,13 @@
 
 
 
-.container.desc-img {
+.section-desc-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.desc-img {
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,13 +60,23 @@
     /* Buscar font-family "Open Sans"*/
     line-height: 25px;
 }
-.container.desc-img .img {
+.desc-img .img {
     margin-top: 15px;
     margin-bottom: 15px;
     max-width: 1100px;
 }
-.container.desc-img .img img {
+.desc-img .img img {
     width: 100%;
+    box-shadow: 0px 2px 6px #333;
+}
+.desc-img .img.mais { /* Teste para Fotos */
+    
+}
+.img.mais .img-mais-local { /* Teste para Fotos */
+    
+}
+.img.mais .img-mais-local img {
+    margin-top: 15px;
 }
 .desc-2 {
     margin-top: 15px;
