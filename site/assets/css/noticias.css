@@ -24,27 +24,34 @@ h1{
 }
 
 
-section{
-    padding: 20px;
+
+.herder-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.cards{
+    max-width: 1200px;
+    padding: 20px 0;
     margin:auto;
     text-align: center;
-}
-
-.cards{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
+    flex-wrap: wrap;  
+    justify-content: space-between; 
     align-items:center;
     width: 98%;
     padding-left: 0px;
     /* position: absolute; */
- 
     
 }
 
+
+    
+
+
 .card{
     width: 350px;
-    margin:30px;
+    margin:10px;
     padding: 25px;
     border: 1px solid #aaa7a7;
     border-radius: 20px;
@@ -52,7 +59,12 @@ section{
     text-align: center;
     background-color: antiquewhite;
     justify-content: space-around;
+    box-shadow: 0px 0px 2px #333;
+    transition: all 0.7s; 
     
+}
+ .card:hover{
+    box-shadow: 0px 0px 10px #333;
 }
 
 .card img{
