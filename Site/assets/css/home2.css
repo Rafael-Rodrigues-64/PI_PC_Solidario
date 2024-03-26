@@ -30,6 +30,7 @@ header {
     display: flex;
     align-items: center;
     width: 245px;
+    background-color: #ccc;
 }
 .logo img {
     width: 100%;
@@ -372,24 +373,33 @@ footer {
     height: 140px;
     display: flex;
     justify-content: center;
-    background: linear-gradient(-110deg, #FCC48F, #cc701a);   
+    background: linear-gradient(-110deg, #FCC48F, #cc701a);
+}
+.header.footer {
+    background-color: #58c0c5;
+}
+.logo.footer {
+    max-width: 245px;
 }
 .meio {
-    margin-left: 40px;
-    padding-top: 25px;
-    padding-right: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    flex-direction: column;
+    
 }
-.meio span {
-    display: inline-block;
+.meio .tel-email,
+.meio .end {
+    display: flex;
+    align-items: center;
 }
-.meio .tel, .email, .end {
-    padding-left: 45px;
+.meio .tel-email img,
+.meio .end img {
+    width: 21px;
+    height: 21px;
 }
 .copyright {
-    padding-top: 10px;
-    padding-left: 40px;
     display: flex;
-    justify-content: space-between;
 }
 .copyright a {
     text-decoration: none;
@@ -397,7 +407,7 @@ footer {
     font-size: 15px;
     font-weight: 500;
 }
-.header.footer h2 {
+.copyright h2 {
     font-size: 15px;
     font-weight: 500;
     color: #fff;
