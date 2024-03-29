@@ -30,7 +30,6 @@ header {
     display: flex;
     align-items: center;
     width: 245px;
-    background-color: #ccc;
 }
 .logo img {
     width: 100%;
@@ -154,9 +153,6 @@ section.slider {
     margin-left: -50%;
 }
 
-.banner-main-defaults--sombra {
-    background-color: rgba(0, 0, 0, 0.1);
-}
 .banner-main-defaults {
     background-image: url('../images/banner_body_1.1.png');
     background-size: cover; 
@@ -164,28 +160,28 @@ section.slider {
     background-position: center;
 }
 
+.banner-main-defaults--sombra {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Área Notícias (Sistema)...*/
 .default {
     padding-top: 98px;
     margin-bottom: 50px;
 }
-
 .default .section-title h2 {
     color: #F7941E;
     font-size: 60px;
     font-weight: 700;
     text-shadow: 0px 1px 0px #555;
 }
-
 .default .section-desc {
     font-size: 14px;
     font-weight: 200;   
     margin-top: 10px;
-    color: #303337;
-    
+    color: #303337;   
     text-shadow: 0px 0px 1px #555;
 }
-
 .default .section-title,
 .default .section-desc,
 .default .section-body {
@@ -193,12 +189,12 @@ section.slider {
     margin: auto;
 }
 
+
 .default_2 { /* Área Impacto Social (Sistema)...*/
     background-color: rgba(0, 0, 0, 0.8);
     padding-bottom: 50px;
     padding-top: 20px;
 }
-
 .default_2 .section-title h2 {
     color: #fff;
     font-size: 60px;
@@ -206,7 +202,6 @@ section.slider {
     text-shadow: 0px 1px 0px #555;
     margin-bottom: 30px;
 }
-
 .default_2 .section-title,
 .default_2 .section-body {
     max-width: 1200px;
@@ -220,18 +215,21 @@ Altura área notícias 1 parte (altura imagem): 208px
 Altura área notícias 2 parte (conteúdo): 386px
 */
 .section-noticias {
+    width: 100vw;
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 70px;
 }
 
 .section-noticias--areas {
-    width: 345px;
+    width: 344px;
     height: 594px;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 0px 0px 2px #333;
     transition: all 0.7s;
+    
 }
 
 .section-noticias--areas:hover  {
@@ -239,35 +237,39 @@ Altura área notícias 2 parte (conteúdo): 386px
 } 
 
 .section-noticias--areas.area1,
+.section-noticias--areas.area4 {
+    margin-right: 84px;
+}
+.section-noticias--areas.area3,
+.section-noticias--areas.area6 {
+    margin-left: 84px;
+}
+.section-noticias--areas.area1,
 .section-noticias--areas.area2,
 .section-noticias--areas.area3 {
-    margin-bottom: 15px;
-}
-
-.section-noticias--areas.area4,
-.section-noticias--areas.area5,
-.section-noticias--areas.area6 {
-    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .section-noticias--areas {
     display: flex;
     flex-direction: column;
+    
 }
 
-.noticias-img {
+.noticias-img a {
+    display: block;
     height: 208px;
 }
 
  .noticias-img img {
     width: 100%;
+    height: 100%;
     border-radius: 8px 8px 0px 0px;
 }
 
 .noticias-title-desc-mais {
     flex: 1;
     padding: 0 22px;
-    margin-top: 22px;
     background-color: #FDF3DD;
 }
 
@@ -283,8 +285,8 @@ Altura área notícias 2 parte (conteúdo): 386px
 .noticias-title-desc-mais h2 {
     color: #044b6c;
     font-size: 21px;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 .noticias-title-desc-mais p {
@@ -375,42 +377,44 @@ footer {
     justify-content: center;
     background: linear-gradient(-110deg, #FCC48F, #cc701a);
 }
-.header.footer {
-    background-color: #58c0c5;
-}
 .logo.footer {
     max-width: 245px;
 }
-.meio {
-    display: flex;
-    align-items: end;
-    justify-content: flex-end;
+.meio--tel-email-end {
+    display: flex;    
     flex-direction: column;
-    
 }
-.meio .tel-email,
-.meio .end {
+.meio--tel-email-end .tel-email,
+.meio--tel-email-end .end {
     display: flex;
     align-items: center;
+    padding-top: 15px;
 }
-.meio .tel-email img,
-.meio .end img {
+.meio--tel-email-end .tel-email img,
+.meio--tel-email-end .end img {
     width: 21px;
     height: 21px;
+    margin-right: 3px;
+}
+.meio--tel-email-end .tel-email .num-tel {
+    margin-right: 20px;
 }
 .copyright {
     display: flex;
+    margin-top: 36px;
 }
 .copyright a {
     text-decoration: none;
     color: #000;
     font-size: 15px;
     font-weight: 500;
+    padding-left: 70px;
 }
 .copyright h2 {
     font-size: 15px;
     font-weight: 500;
     color: #fff;
+    padding-right: 60px;
 }
 
 
