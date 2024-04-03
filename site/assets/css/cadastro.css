@@ -9,21 +9,41 @@ body {
   align-items: center;
 }
 
+p {
+  text-align: left;
+
+}
+
+a {
+  font-weight: bolder;
+}
+
+.text_introduction p {
+  text-align: center;
+}
+
 
 .titulo_formulario {
-  background-color: #ffc494;
-  text-align: center;
-  padding: 0px;
-  border: 0px solid #ffc494;
-   
+  background-color: #ffc494; 
+  padding: 10px;
+  border-width: 0px;
+     
 }
 
 .titulo_formulario legend {
-  font-weight: bold;
-  border-radius: 20px;
-  background-color: #ffc494;
-  padding: 4px 20px;
+
+  text-align: center;
 }
+
+
+.cadastre-se {
+  font-size: xx-large;
+  font-weight: bolder;
+  border-radius: 30px;
+  background-color: #ffc494;
+  padding: 10px 25px;
+
+ }
 
 
 .form input {
@@ -36,24 +56,34 @@ body {
   
 } 
 
-
 .form {
+
   padding: 5px;
   margin: 1px;
  
-
 }
 
 .estrutura {
-  width: 40%;
-  margin: 0;
+  width: 45%;
+
  
 }
 
 #email, #confirmar_email {
-  width: 233px;
+  max-width: 360px;
 }
 
 #senha, #confirmar_senha {
-  width: 205px;
+  width: 360px;
+}
+
+.button {
+  width: 200px;
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  background-color: rgb(28, 111, 179);
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
 }
