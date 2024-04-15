@@ -4,54 +4,134 @@
     padding: 0;
 }
 
-
 body {
-    background-color: #f6f5f7;
     font-family: Arial, sans-serif; 
     font-size: 18px;
     color: #54595f;
       
 }
 .principal{
+    margin-bottom: 50px;
    display: flex;
    justify-content: center;
-   background-color: aqua;
-  
-    
 }
 .titulosub{
     margin-top: 50px;
     width: 1200px;
     display: flex;
-    background-color: aquamarine;
     flex-direction: column;
-
     }
 
 .titulo{
-    background-color: brown;
     display: flex;
-
-
-    
+    margin-bottom: 60px;  
 }
-.titulo img{
-    width: 150px;
-}
-.subtitulo{
-    background-color: chartreuse;
 
+.titulo .titulo-prs {
+    flex: 2;
 }
-h1 {
-    color: #ff7b00;
+
+.titulo h1 {
+    color: #F7941E;
     font-weight: bold;
     font-size: 60px;
-    padding: 10px;
-    
-  
+    margin-bottom: 30px;
+}
+
+.titulo .titulo-prs .pr {
+    padding: 9px 0px;
+    margin-right: 40px;
+    line-height: 25px;
+}
+
+.titulo .imagem-desc {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+
+.imagem-desc .logo img{
+    width: 150px;
+}
+
+.imagem-desc .logo {
+    padding-right: 200px;
+}
+
+.imagem-desc p {
+    color: black;    
+    padding-top: 8px;
+    padding-right: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imagem-desc h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 5px;
 }
 
 
+.subtitulo{
+    display: flex;
+    
+}
 
 
+.subtitulo .p1 {
+    flex: 1;
+}
 
+.subtitulo .p1:not(:last-child) {
+    padding-right: 25px;
+}
+
+.subtitulo .p1 .linha {
+    display: flex;
+    padding: 15px 0px;
+}
+
+.subtitulo .p1 .linha span {
+    width: 100%;
+}
+.subtitulo .p1.p0 .linha span {
+    border-top: 10px solid #1C5599;
+}
+.subtitulo .p1.p2 .linha span {
+    border-top: 10px solid #F7941E;
+}
+.subtitulo .p1.p3 .linha span {
+    border-top: 10px solid #CB962E;
+}
+
+.subtitulo .p1 h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.subtitulo .p1.p0 h2 {
+    color: #1C5599;
+}
+.subtitulo .p1.p2 h2 {
+    color: #F7941E;
+}
+.subtitulo .p1.p3 h2 {
+    color: #CB962E;
+}
+
+.subtitulo .p1 p {
+    line-height: 25px;
+}
+
+.subtitulo .p1.p3 p:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.subtitulo .p1.p3 p span {
+    font-weight: bold;
+}
