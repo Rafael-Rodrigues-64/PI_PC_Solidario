@@ -172,7 +172,7 @@ section.slider {
     padding-top: 98px;
     margin-bottom: 50px;
 }
-.default .section-title h2 {
+.default .section-title.noticias h2 {
     color: #F7941E;
     font-size: 60px;
     font-weight: 700;
@@ -181,7 +181,7 @@ section.slider {
 .default .section-desc {
     font-size: 14px;
     font-weight: 200;
-    margin-top: 10px;
+    padding-top: 15px;
     color: #303337;  
     text-shadow: 0px 0px 1px #555;
 }
@@ -215,7 +215,7 @@ section.slider {
     font-size: 60px;
     font-weight: 700;
     text-shadow: 0px 1px 0px #555;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
 }
 .default_2 .section-title,
 .default_2 .section-body {
@@ -233,14 +233,16 @@ Altura área notícias 2 parte (conteúdo): 386px
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 70px;
-    margin-bottom: 30px;
+    margin-top: 45px;
+    margin-bottom: 30px;    
 }
 
 .section-noticias--areas {
     flex: 1;
     display: flex;
     flex-direction: column;
+    min-width: 285px;
+    margin: 15px 0;
     background-color: #FDF3DD;
     box-shadow: 0px 0px 2px #333;
     border-radius: 8px 8px 8px 8px;
@@ -255,9 +257,9 @@ Altura área notícias 2 parte (conteúdo): 386px
 
 .section-noticias--areas:hover  {
     box-shadow: 0px 0px 10px #333;
-} 
+}
 
-.section-noticias--areas:not(:last-child) {
+.section-noticias--areas:not(:nth-child(3n)) {
     margin-right: 84px;
 }
 
