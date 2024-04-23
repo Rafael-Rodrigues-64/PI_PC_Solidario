@@ -84,7 +84,7 @@ nav a:hover {
     height: 20px;
 }
 
-section.slider {
+section.slider-Carrossel {
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -93,14 +93,14 @@ section.slider {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.slider-content {
+.slider-content-Carrossel {
     width: 400%;
     height: auto;
     display: flex;
     
 }
 
-.slider-content input {
+.slider-content-Carrossel input {
     display: none;
 }
 
@@ -170,7 +170,7 @@ section.slider {
 /* Área Notícias (Sistema)...*/
 .default {
     padding-top: 98px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .default .section-title.noticias h2 {
     color: #F7941E;
