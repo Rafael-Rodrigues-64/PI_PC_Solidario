@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {    
+    background-color: #FCC48F;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    color: #000;
+}
+
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    height: 97vh;
+    width: 100%;
+}
+
+fieldset {
+    /*background-color: #fff; /* Quarto valor é a taxa de tranparência da cor. vai de 0 a 1 ou seja 0% a 100% */
+    margin-top: 10px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+      
+  
+}
+
+.campos {
+    margin-bottom: 20px;
+}
+
+.info { 
+    width: 500px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 18px;
+    outline: 0;  
+}
+/* input:focus-within {
+    border: 2px solid blue;
+    border-radius: 4px;
+} */
+    
+legend {
+    color: white;
+    text-align: center;
+
+}
+.lembrar-senha{
+    display: flex;
+    width: 500px;
+}
+.lembrar-senha label{
+    font-size: 18px;
+}
+.lembrar-senha a {
+    margin-left: auto;
+    color: #46698f;
+    display: inline-block;        
+    font-size: 18px;
+    padding-right: 5px;
+    
+    
+}
+.Btn{
+    width: 500px;
+    background:linear-gradient(90deg, #58c0c5,#004aad);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 26px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cadastro a {
+    color: #46698f;
+    font-size: 18px
+    
+}
+
+
+
