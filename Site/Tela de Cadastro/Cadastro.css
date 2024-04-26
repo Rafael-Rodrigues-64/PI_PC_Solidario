@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {    
+    background-color: #fcc48f;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    color: #000;
+}
+
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 97vh;
+    width: 100%;
+
+    background-color:#fcc48f ;
+}
+
+fieldset {
+ /* Quarto valor é a taxa de tranparência da cor. vai de 0 a 1 ou seja 0% a 100% */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: none;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+.usuario{
+    width: 450px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 18px;
+    outline: 0;
+    border-bottom: 2px solid blue;
+    outline: 0;
+
+}
+input {
+    width: 450px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 18px;
+    outline: 0; /* Remove a borda quando é selecionado */
+}
+input:focus-within {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 1px;
+}
+
+h2 {
+    align-self: flex-start;
+}
+
+div {
+    align-self: flex-start;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+div a {
+    color: #888;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;    
+}
+
+.botao {
+    width: 150px;
+    color: aliceblue;
+    font-weight: bold;
+    background:linear-gradient(90deg,#5de0e6 ,#004aad);
+    border-radius: 4px;
+    
+}
+
+
