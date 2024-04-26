@@ -38,7 +38,7 @@ fieldset {
 .info { 
     width: 500px;
     margin-top: 5px;
-    padding: 10px;
+    padding: 15px;
     font-size: 15px;
     border: none;
     border-radius: 18px;
@@ -50,7 +50,6 @@ fieldset {
 } */
     
 legend {
-    color: white;
     text-align: center;
 
 }
@@ -66,19 +65,21 @@ legend {
     color: #46698f;
     display: inline-block;        
     font-size: 18px;
-    padding-right: 5px;
-    
-    
+    padding-right: 5px; 
 }
+.lembrar-senha input{
+    padding: 10px;
+}
+
 .Btn{
     width: 500px;
-    background:linear-gradient(90deg, #58c0c5,#004aad);
+    background:linear-gradient(90deg, #5de0e6,#004aad);
     color: white;
     cursor: pointer;
     padding: 18px;
     border-radius: 26px;
     border: none;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
