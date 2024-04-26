@@ -68,7 +68,9 @@ legend {
     padding-right: 5px; 
 }
 .lembrar-senha input{
-    padding: 10px;
+
+    min-width: 30px;
+    min-height: 30px;
 }
 
 .Btn{
