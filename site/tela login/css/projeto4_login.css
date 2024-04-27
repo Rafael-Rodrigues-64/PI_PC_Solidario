@@ -23,6 +23,37 @@ form {
     background-color:rgba(0, 0, 0, 0.3);
 }
 
+.borda-animada {
+    background-color: transparent;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.borda-animada::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 160%;
+    background: linear-gradient(180deg,#004aad, #cc701a);
+
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.borda-animada::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 1);
+    inset: 5px;
+    border-radius: inherit;
+}
+
 fieldset {
     /*background-color: #fff; /* Quarto valor é a taxa de tranparência da cor. vai de 0 a 1 ou seja 0% a 100% */
     margin-top: 10px;    
@@ -30,15 +61,17 @@ fieldset {
     flex-direction: column;
     align-items: center;
     border: none;
-     
- 
+    padding: 20px;
+    position: relative;
+    z-index: 1;
 }
     
 legend {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 45px;
+    padding-top: 10px;
+    margin-bottom: 30px;
 }
 
 .campos {
