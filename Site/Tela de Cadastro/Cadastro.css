@@ -1,91 +1,148 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {    
-    background-color: #fcc48f;
+    background-image: url('../imagem/5576289.jpg');
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-    color: #000;
+    color:#F7941E
 }
-
-
-
 
 form {
     display: flex;
     justify-content: center;
-    align-items: center;    
-    height: 97vh;
+    align-items: center;        
+    height: 100vh;
     width: 100%;
+    background-color:rgba(0, 0, 0, 0.3);
+}
 
-    background-color:#fcc48f ;
+.borda-animada {
+    background-color: transparent;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.borda-animada::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 160%;
+    background: linear-gradient(180deg,#004aad, #cc701a);
+
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.borda-animada::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 1);
+    inset: 5px;
+    border-radius: inherit;
 }
 
 fieldset {
- /* Quarto valor é a taxa de tranparência da cor. vai de 0 a 1 ou seja 0% a 100% */
-    margin-top: 10px;
+    /*background-color: #fff; /* Quarto valor é a taxa de tranparência da cor. vai de 0 a 1 ou seja 0% a 100% */
+    margin-top: 10px;    
     display: flex;
     flex-direction: column;
     align-items: center;
-
     border: none;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 
-label {
-    margin-bottom: 20px;
-}
 
-.usuario{
-    width: 450px;
-    margin-top: 5px;
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 18px;
-    outline: 0;
-    border-bottom: 2px solid blue;
-    outline: 0;
-
-}
-input {
-    width: 450px;
-    margin-top: 5px;
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 18px;
-    outline: 0; /* Remove a borda quando é selecionado */
-}
-input:focus-within {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 1px;
-}
-
-h2 {
-    align-self: flex-start;
-}
-
-div {
-    align-self: flex-start;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 15px;
-}
-div a {
-    color: #888;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;    
-}
-
-.botao {
-    width: 150px;
-    color: aliceblue;
+legend {
+    text-align: center;
+    font-size: 28px;
     font-weight: bold;
-    background:linear-gradient(90deg,#5de0e6 ,#004aad);
-    border-radius: 4px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.campos {
+    margin-bottom: 32px;
+    font-size: 18px;
+  
+}
+.campos {
+    margin-bottom: 32px;
+    font-size: 18px;
+  
+}
+
+.info { 
+    width: 500px;
+    margin-top: 5px;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    outline: 0;  
     
 }
 
+/* .lembrar-senha{
+    display: flex;
+    width: 500px;
+    align-items: center;
+    margin-bottom: 30px;
+} */
 
+/* .lembrar-senha label{
+    font-size: 20px;
+    padding-left: 5px;
+       
+} */
+/* .lembrar-senha a {
+    margin-left: auto;
+    color: #46698f;
+    display: inline-block;        
+    font-size: 20px;
+    padding-right: 5px; 
+   
+} */
+/* .lembrar-senha input{
+    min-width: 25px;
+    min-height: 25px;
+} */
+
+.Btn{
+    width: 500px;
+    background:linear-gradient(90deg, #5de0e6,#004aad);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 28px;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cadastro a {
+    color: #46698f;
+    font-size: 20px;
+    padding-left: 2px;
+    
+}
+.cadastro span{
+    font-size: 20px;
+    align-items: center;
+    padding-left: 40px;
+}
