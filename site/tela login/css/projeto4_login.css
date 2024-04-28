@@ -6,7 +6,6 @@
 
 body {    
     background-image: url('../imagem/5576289.jpg');
-
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -17,7 +16,7 @@ body {
 form {
     display: flex;
     justify-content: center;
-    align-items: center;        
+    align-items: center;
     height: 100vh;
     width: 100%;
     background-color:rgba(0, 0, 0, 0.3);
@@ -49,14 +48,13 @@ form {
 .borda-animada::after {
     content: '';
     position: absolute;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: black;
     inset: 5px;
     border-radius: inherit;
 }
 
-fieldset {
-    /*background-color: #fff; /* Quarto valor é a taxa de tranparência da cor. vai de 0 a 1 ou seja 0% a 100% */
-    margin-top: 10px;    
+fieldset {    
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,27 +75,25 @@ legend {
 .campos {
     margin-bottom: 32px;
     font-size: 18px;
-   
 }
 
-.info { 
+.info {     
     width: 500px;
     margin-top: 5px;
     padding: 15px;
     font-size: 15px;
     border: none;
     border-radius: 20px;
-    outline: 0;  
-    
+    outline: 0;    
 }
 
-.lembrar-senha{
+.lembrar-senha {
     display: flex;
     width: 500px;
     align-items: center;
     margin-bottom: 30px;
 }
-.lembrar-senha label{
+.lembrar-senha label {
     font-size: 20px;
     padding-left: 5px;
 
@@ -106,17 +102,17 @@ legend {
 .lembrar-senha a {
     margin-left: auto;
     color: #46698f;
-    display: inline-block;        
+    display: inline-block;
     font-size: 20px;
-    padding-right: 5px; 
+    padding-right: 5px;
    
 }
-.lembrar-senha input{
+.lembrar-senha input {
     min-width: 25px;
     min-height: 25px;
 }
 
-.Btn{
+.Btn {
     width: 500px;
     background:linear-gradient(90deg, #5de0e6,#004aad);
     color: white;
@@ -133,9 +129,8 @@ legend {
     color: #46698f;
     font-size: 20px;
     padding-left: 10px;
-    
 }
-.cadastro span{
+.cadastro span {
     font-size: 20px;
 }
 
