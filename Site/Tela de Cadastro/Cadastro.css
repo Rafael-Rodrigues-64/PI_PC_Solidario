@@ -5,7 +5,7 @@
 }
 
 body {    
-    background-image: url('../imagem/5576289.jpg');
+    background-image: url('img/Tela-de-Fundo-Pc-Solidario.png');
 
     background-size: cover;
     background-attachment: fixed;
@@ -20,7 +20,7 @@ form {
     align-items: center;        
     height: 100vh;
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.3);
+    background-color:rgba(0, 0, 0, 0.2);
 }
 
 .borda-animada {
@@ -37,7 +37,7 @@ form {
     position: absolute;
     width: 200px;
     height: 160%;
-    background: linear-gradient(180deg,#004aad, #cc701a);
+    background: linear-gradient(90deg,#004aad, #cc701a);
 
     animation: animate 6s linear infinite;
 }
@@ -49,7 +49,7 @@ form {
 .borda-animada::after {
     content: '';
     position: absolute;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: black;
     inset: 5px;
     border-radius: inherit;
 }
@@ -72,18 +72,23 @@ legend {
     font-size: 28px;
     font-weight: bold;
     padding-top: 10px;
-    margin-bottom: 10px;
+}
+
+.cadastro {
+    text-align: center;
+    color: #46698f;
+    font-size: 19px;        
+}
+ .preencher {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 .campos {
     margin-bottom: 32px;
-    font-size: 18px;
-  
-}
-.campos {
-    margin-bottom: 32px;
-    font-size: 18px;
-  
+    font-size: 18px;  
 }
 
 .info { 
@@ -93,8 +98,7 @@ legend {
     font-size: 15px;
     border: none;
     border-radius: 20px;
-    outline: 0;  
-    
+    outline: 0;
 }
 
 /* .lembrar-senha{
@@ -132,17 +136,6 @@ legend {
     border: none;
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
-.cadastro a {
-    color: #46698f;
-    font-size: 20px;
-    padding-left: 2px;
-    
-}
-.cadastro span{
-    font-size: 20px;
-    align-items: center;
-    padding-left: 40px;
-}
