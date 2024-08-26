@@ -1,8 +1,20 @@
+* {
+  margin: 0;
+  padding :0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "popins" , sans-serif
+}
+ 
+
 .body {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; */
+
+    display: flex;
   }
   .container {
       display: grid;
@@ -23,7 +35,10 @@
       padding: 0 20px;
   }
   .logo {
-      font-weight: bold;
+      /* font-weight: bold; */
+
+      height: 80px;
+      padding: 16px;
   }
   
   .user-info {
@@ -41,17 +56,40 @@
   }
   
   .sidebar {
-      grid-area: sidebar;
+      /* grid-area: sidebar;
       background-color: #3066b8;
-      padding-top: 20px;
+      padding-top: 20px; */
+
+      position: sticky;
+      top: 0;
+      left: 0;
+      bottom: 10px;
+      width: 240;
+      height: 100vh;
+      padding: 0 1.7rem;
+      color: #5386d399;
+      overflow: hidden;
+      transition: all 0.5s linear;
+      background-color: #3066b8;
+
   }
+
+ 
   .sidebar nav ul {
       list-style: none;
+      height: 88%;
+      position: relative;
+      padding: 0;
       
   }
   
   .sidebar nav ul li {
-      margin: 15px 0;
+      margin: 8px 0;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: all 0.5s ease-in-out;
+
+
     
   }
   
@@ -70,6 +108,7 @@
 
   .actions {
       margin-bottom: 20px;
+     
   }
   
   .btn {
@@ -90,18 +129,28 @@
   
   .form-select {
       margin-bottom: 20px;
+      
+
+      
+    
   }
   
   .form-btn {
       padding: 10px 20px;
-      margin-right: 10px;
+      margin-right: 100px ;
       border: none;
       color: white;
       cursor: pointer;
+
   }
   
   .pessoa-fisica {
       background-color: #33cc33;
+      display: flex;
+     wrap: 100px; 
+
+     
+     
   }
   
   .pessoa-juridica {
