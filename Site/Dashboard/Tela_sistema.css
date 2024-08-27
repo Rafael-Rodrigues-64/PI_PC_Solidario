@@ -75,7 +75,7 @@
   }
 
  
-  .sidebar nav ul {
+  .menu li {
       list-style: none;
       height: 88%;
       position: relative;
@@ -83,16 +83,21 @@
       
   }
   
-  .sidebar nav ul li {
+  .menu li :hover,:active {
       margin: 8px 0;
       padding: 1rem;
       border-radius: 8px;
       transition: all 0.5s ease-in-out;
-
-
+     
     
   }
   
+  .sidebar li:hover {
+     background-color: #e0e0e058;
+
+
+
+  }
   .sidebar nav ul li a {
       text-decoration: none;
       color: white;
@@ -129,9 +134,14 @@
   
   .form-select {
       margin-bottom: 20px;
-      
+      margin-left: 1200px;
+      display: flex;
+   
+    
 
       
+
+  
     
   }
   
@@ -147,10 +157,8 @@
   .pessoa-fisica {
       background-color: #33cc33;
       display: flex;
-     wrap: 100px; 
-
-     
-     
+       
+        
   }
   
   .pessoa-juridica {
@@ -159,7 +167,9 @@
   
   .content-area {
       background-color: #678cc4;
-      height: 300px;
+      height: 100px;
+      margin-top: 5px;
+      position: static;
   }
   
   .footer {
