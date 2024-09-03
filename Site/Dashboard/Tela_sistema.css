@@ -112,11 +112,12 @@
       gap: 1.5rem;
   }
   
-  .main-content {
+  /* .main-content {
       background-color: #c3c7cddc;
       margin: 0;
+      
      
-  }
+  } */
   
 .actions{
     margin-left: 8px;
@@ -178,6 +179,17 @@
       
    }
   
+  .tipo{
+    justify-content:left;
+    padding: 40px;
+ }
+
+ .Dados-Pessoais{
+
+ }
+
+
+  
   .form-btn {
       padding: 10px 20px;
       margin-right: 50px ;
@@ -199,10 +211,11 @@
   }
   
   .content-area {
-      background-color: #f3f3f3;
-      height: 70vh;
+      background-color: #d9d5d5e1;
+      height: 160vh;
       margin-left: 8px;
       margin-right: 8px; 
+  
   }
 
   .obrigat{
@@ -233,9 +246,11 @@
    }
 
    .end {
-    color: #a2a79ddb;
+    color: #10090adb;
     padding-top: 40px;
     padding-left: 15px;
+    padding-right: 800px;
+
  
    }
   
