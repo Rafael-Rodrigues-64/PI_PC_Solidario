@@ -68,7 +68,7 @@
       top: 0;
       left: 0;
       bottom: 0px;
-      height: 100vh;
+      height: 242vh;
       padding: 0 1.7rem; 
       color: #5386d399;
       overflow: hidden;
@@ -95,7 +95,6 @@
       border-radius: 10px;
       transition: all 0.5s ease-in-out;
     
-    
   }
   
   .menu li:hover {
@@ -112,12 +111,6 @@
       gap: 1.5rem;
   }
   
-  /* .main-content {
-      background-color: #c3c7cddc;
-      margin: 0;
-      
-     
-  } */
   
 .actions{
     margin-left: 8px;
@@ -188,6 +181,7 @@
 
  }
 
+ 
 
   
   .form-btn {
@@ -212,7 +206,7 @@
   
   .content-area {
       background-color: #d9d5d5e1;
-      height: 160vh;
+      height: 230vh;
       margin-left: 8px;
       margin-right: 8px; 
   
@@ -251,7 +245,10 @@
     padding-left: 15px;
     padding-right: 800px;
 
- 
+   }
+   select{
+    padding: 10px;
+    border-radius: 5px;
    }
   
   .footer-info {
@@ -280,6 +277,7 @@
    margin-right: 5px;
 
   } 
+
 .btn_salvar{
     color: #f5f6f5;
     background-color:#1f3f61;
@@ -287,7 +285,6 @@
     border-radius: 5px;
     width:130px;
     cursor: pointer;
-    
-     
-    
+      
+   
 }

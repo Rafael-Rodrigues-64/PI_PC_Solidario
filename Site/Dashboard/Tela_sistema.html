@@ -47,7 +47,7 @@
                 <button class="btn cadastrar">Cadastrar</button>
             </div>
 
-            
+             
             
             <div class="content-area">
 
@@ -60,21 +60,21 @@
                 
                 <form class="endereco">
                     <div class="div1">
-                            <label for="">Cidade</label>
-                            <input type="text"><span class="obrigat">*</span>
+                            <label for="">Cidade <span class="obrigat">*</span></label>
+                            <input type="text">
                         
-                            <label for="">Estado</label>
-                            <input type="text"><span class="obrigat">*</span>
+                            <label for="">Estado <span class="obrigat">*</span></label>
+                            <input type="text">
                         
-                            <label for="">Bairro</label>
-                            <input type="text"><span class="obrigat">*</span>
+                            <label for="">Bairro <span class="obrigat">*</span></label>
+                            <input type="text">
                     </div>
                 
-                    <div class="div2"> <label for="">Logradouro</label>
-                                <input type="text"><span class="obrigat">*</span>
+                    <div class="div2"> <label for="">Logradouro <span class="obrigat">*</span></label>
+                                <input type="text">
                         
-                                <label for="">Numero</label>
-                                <input type="number"><span class="obrigat">*</span>
+                                <label for="">Numero <span class="obrigat">*</span></label>
+                                <input type="number">
                             
                                 <label for="">Cep</label>
                                 <input type="int">    
@@ -87,8 +87,13 @@
                 <h2 class="end">Tipo</h2>
                 <form class="tipo">
                     <div class="div1 tipo1">
-                            <label for="">Tipo Doador</label>
-                            <input type="text"><span class="obrigat">*</span>
+
+                            <label for="">Tipo Doador <span class="obrigat">*</span></label>
+                            <Select>
+                                <option value="">--</option>
+                                <option value="int">Interno</option>
+                                <option value="ext">Externo</option>                            
+                            </Select>
                         
                     </div>
                                                    
@@ -97,18 +102,24 @@
                 <h2 class="end">Dados Pessoais</h2>
                 <form class="Dados-Pessoais">
                     <div class="div1 Dados-Pessoais">
-                            <label for="">Nome</label>
-                            <input type="text"><span class="obrigat">*</span>
+                            <label for="">Nome <span class="obrigat">*</span></label>
+                            <input type="text">
                         
-                            <label for="">Telefone</label>
-                            <input type="text"><span class="obrigat">*</span>
+                            <label for="">Telefone <span class="obrigat">*</span></label>
+                            <input type="text">
                         
-                            <label for="">Gênero</label>
-                            <input type="text"><span class="obrigat">*</span>
+                            <label for="">Gênero <span class="obrigat">*</span></label>
+                            <select >
+                                <option value="mas">Masculino</option>
+                                <option value="fem">Feminino</option>
+                                <option value="out">Outros</option>
+
+                            </select>
+
                     </div>
                 
-                    <div class="div2"> <label for="">Email</label>
-                                <input type="text"><span class="obrigat">*</span>
+                    <div class="div2"> <label for="">Email <span class="obrigat">*</span></label>
+                                <input type="text">
                             
                                 <label for="">CPF</label>
                                 <input type="int">    
@@ -117,6 +128,37 @@
                  
                    
                 </form>
+                <h2 class="end">Produto</h2>
+                <form class="Dados-Pessoais">
+                    <div class="div1 Dados-Pessoais">
+                            <label for="">Nome <span class="obrigat">*</span></label>
+                            <input type="text">
+                        
+                            <label for="">Modelo <span class="obrigat">*</span></label>
+                            <input type="text">
+                        
+                            <label for="">Data Recebimento <span class="obrigat">*</span></label>
+                            <input type="time">
+
+                            <label for="">Descrição</label>
+                            <input type="text">
+                    </div>
+                
+                    <div class="div2"> <label for="">Outro</label>
+                                <input type="text">
+                            
+                                <label for="">Marca</label>
+                                <input type="text">  
+
+                                <label for="">Quantidade <span class="obrigat">*</span></label>
+                                <input type="number">
+
+                    </div>         
+
+                 
+                   
+                </form>
+                
                 
                 
                  <div class="Salvar">
