@@ -4,7 +4,11 @@
     padding: 0;
 }
 
-body {    
+body {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    padding: 30px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
     background-image: url('../imagem/5576289.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -13,23 +17,41 @@ body {
     color:#F7941E
 }
 
-.icon-login {
-    background-color: red;
-    height: 20%;
+.login-icon img {
+    width: 350px;
 }
 
-.login-gerenciamento {
-    background-color: #5de0e6;
+.login-icon-text, form {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
 
+h1, h2 {
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+h1 span {
+    color: #4a86e8;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-top: 5px;
 }
 
 form {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color:rgba(0, 0, 0, 0.3);
+    height: 88vh;    
 }
 
 .borda-animada {
@@ -71,9 +93,15 @@ fieldset {
     border: none;
     padding: 20px;
     position: relative;
-    z-index: 1;
+    z-index: 1;    
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
 }
-    
+
+fieldset:hover {
+    transform: scale(1.01);
+}
+
 legend {
     text-align: center;
     font-size: 28px;
