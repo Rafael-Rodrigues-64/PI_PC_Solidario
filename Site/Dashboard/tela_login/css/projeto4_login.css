@@ -13,6 +13,16 @@ body {
     color:#F7941E
 }
 
+.icon-login {
+    background-color: red;
+    height: 20%;
+}
+
+.login-gerenciamento {
+    background-color: #5de0e6;
+
+}
+
 form {
     display: flex;
     justify-content: center;
