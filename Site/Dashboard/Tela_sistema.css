@@ -77,6 +77,10 @@
 
   }
 
+  nav{
+    margin-top: 30px;
+  }
+
   .menu a i{
     font-size: 1.2rem;
   }
@@ -89,19 +93,11 @@
       
   }
   
-  .menu li :hover,:active {
-      margin: 3px 0;
-      padding: 3px;
-      border-radius: 10px;
-      transition: all 0.5s ease-in-out;
-    
+  .menu li:hover {
+    background-color: #e0e0e058;
+
   }
   
-  .menu li:hover {
-     background-color: #e0e0e058;
-
-
-  }
   .sidebar nav ul li a {
       text-decoration: none;
       color: white;

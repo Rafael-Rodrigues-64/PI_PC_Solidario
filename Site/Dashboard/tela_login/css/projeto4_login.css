@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,16 +6,19 @@
 }
 
 body {
-    display: flex;
-    flex-flow: row wrap-reverse;
+
     padding: 30px;
-    /* background-color: rgba(0, 0, 0, 0.3); */
     background-image: url('../imagem/5576289.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
     color:#F7941E
+}
+
+.principal{
+    display: flex;
+    
 }
 
 .login-icon img {
@@ -26,6 +30,8 @@ body {
     flex-flow: column nowrap;
     flex-shrink: 1;
     flex-grow: 1;
+    margin-left: 90px;
+    font-size: 30px;
 }
 
 h1, h2 {
@@ -37,21 +43,18 @@ h1 {
     margin-top: 10px;
 }
 
-h1 span {
-    color: #4a86e8;
-    font-weight: bold;
-}
-
 h2 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-top: 5px;
+    font-family: 'Manrope';
+    
 }
 
 form {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    height: 88vh;    
+    height: 88vh;  
+     
 }
 
 .borda-animada {
@@ -169,8 +172,11 @@ legend {
     padding-left: 10px;
 }
 .cadastro span {
+
     font-size: 20px;
 }
-
-
-
+.fim{
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
