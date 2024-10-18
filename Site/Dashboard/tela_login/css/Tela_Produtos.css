@@ -10,61 +10,63 @@
 .body {
    
     display: flex;
-  }
-  .container {
-      display: grid;
-      grid-template-areas: 
-          "header header"
-          "sidebar main"
-          "footer footer";
-      grid-template-columns: 250px 1fr;
-      grid-template-rows: 70px 1fr 100px;
-      height: 100vh;
-  }
+}
 
-  .header {
-      grid-area: header; 
-      background-color: #f6b080;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 10px;
-  }
-   .logo {
-     font-weight: bold; 
-      padding: 16px;
-      color: #000000;
-      margin-left: 10px;
-      display: flex;
-      align-items: center;
-      width: 242px;
-  } 
+ .container1 {
+  display: grid;
+  grid-template-areas: 
+   "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 70px 1fr 100px;
+   height: 100vh;
+}
 
-.logo img {
+  .header1 {
+  grid-area: header; 
+  background-color: #f6b080;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.logo1 {
+  font-weight: bold; 
+  padding: 16px;
+  color: #000000;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  width: 242px;
+} 
+
+.logo1 img {
     width: 100%;
     margin-right: 50px;
     padding-top: 15px;
 } 
   
-  .user-info {
+  .user-info1 {
       display: flex;
       align-items: center;
       /* margin-left: 8px; */
       margin-right: 16px; 
 
   }
-  .user-info span {
+  .user-info1 span {
       margin-right: 10px;
     
   }
-  .user-icon {
+  .user-icon1 {
       width: 30px;
       height: 30px;
       background-color: #faf9fc;
       border-radius: 50%;
   }
   
-  .sidebar {
+  .sidebar1 {
       top: 0;
       left: 0;
       bottom: 0px;
@@ -98,7 +100,7 @@
 
   }
   
-  .sidebar nav ul li a {
+  .sidebar1 nav ul li a {
       text-decoration: none;
       color: white;
       padding-left: 10px;
@@ -108,10 +110,10 @@
   }
   
   
-.actions{
+ .actions{
     margin-left: 8px;
 }
-  .btn {
+  .btn1 {
       padding: 10px 20px;
       margin-right: 10px;
       border: none;
@@ -120,13 +122,13 @@
       border-radius: 5px;
   }
   
-  .pesquisar {
+  .pesquisar1 {
       background-color:#1f3f61;
   }
   
-  .cadastrar {
+  /* .cadastrar {
       background-color:#33cc33;
-  }
+  } */
   
   .form-select {
       background-color: #1f3f61;
@@ -168,13 +170,13 @@
       
    }
   
-  .tipo{
+  /* .tipo{
     justify-content:left;
     padding: 40px;
- }
+ } */
 
 
-  .form-btn {
+  .form-btn1 {
       padding: 10px 20px;
       margin-right: 50px ;
       border: none;
@@ -183,25 +185,25 @@
       border-radius: 5px;
   }
   
-  .pessoa-fisica {
+  .pessoa-fisica1 {
       background-color: #33cc33;
       display: flex;
       margin-right: 14px;       
   }
   
-  .pessoa-juridica {
+  .pessoa-juridica1 {
       background-color: #ff704d;
       margin-right: 14px; 
   }
   
-  .content-area {
+  .content-area1 {
       background-color: #d9d5d5e1;
       height: 230vh;
       margin-left: 8px;
       margin-right: 8px; 
   
   }
-
+/* ajustar apartir daqui */
   .obrigat{
     color:red;
   }
@@ -218,6 +220,7 @@
    border-radius: 5px;
    padding-left: 15px;
    cursor: pointer;
+   margin-right: 10px;
    }
 
    .btn_Doar{
@@ -227,6 +230,7 @@
    border-radius: 5px;
    padding-left: 15px;
    cursor: pointer;
+   margin-right: 10px;
    }
 
    .end {
@@ -278,7 +282,29 @@
       
 }
 
-.bnt-3{
-float: inline-end;
+.btn-3{
+display: flex;
+justify-content:flex-start;
+padding-top: 10px;
 
 }
+.search{
+  margin-left: 1050px;
+ 
+}
+
+input {
+  border-radius: 2px;
+ height: 30px;
+
+}
+
+.desc{
+  display: flex;
+  justify-content: space-between;
+ font-weight: bold;
+ margin: 10px 20px 0 20px ;
+}
+
+
+
