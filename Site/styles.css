@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* overflow-x: hidden; */
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-110deg, #58c0c5, #004aad);
+    /* Opções de degradê em graus*/
+    /* 90, 110, -110 180, 135,
+
+     */
+    /* background-color: rgb(76, 76, 165); Cor anterior*/
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 245px;
+}
+.logo img {
+    width: 100%;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+nav a:hover {
+    color: #F7941E;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+.icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: 10px;
+    transition: all 0.6s;
+}
+.icons a:hover {
+    background-color: #F7941E;
+}
+.icons img {
+    width: 20px;
+    height: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+* .container {
+   
+    margin: 120px ;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+   
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+
+.content-left h1 {
+    font-size: 4rem;
+    color:#F7941E;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 100px 0;
+}
+
+.etapas {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F7941E;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.content-right{
+   
+    background-color: #f9f9f9;
+    width: 80%;
+    border-radius: 10px; 
+   
+}
+
+.risk-labs h2 {
+    color: #6A3DA5; /* Cor roxa do logo Risk Labs */
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+
+footer {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-110deg, #FCC48F, #cc701a);
+
+}
+.logo.footer {
+    max-width: 245px;
+}
+.meio--tel-email-end {
+    display: flex;    
+    flex-direction: column;
+}
+.meio--tel-email-end .tel-email,
+.meio--tel-email-end .end {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.meio--tel-email-end .tel-email img,
+.meio--tel-email-end .end img {
+    width: 21px;
+    height: 21px;
+    margin-right: 3px;
+}
+.meio--tel-email-end .tel-email .num-tel {
+    margin-right: 20px;
+}
+.copyright {
+    display: flex;
+    margin-top: 36px;
+}
+.copyright a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 70px;
+}
+.copyright h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    padding-right: 60px;
+}
+
+
+
+@media (max-width: 800px) {
+    .default_2 .section-body {
+        grid-template-columns: 1fr;
+    }
+}
