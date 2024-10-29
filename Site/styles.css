@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -90,12 +89,6 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-} */
-
 * .container {
     
     padding: 10px;
@@ -113,7 +106,14 @@ nav a:hover {
     font-size: 4rem;
     color:#F7941E;
    
+   
 }
+.content-left{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content:;
+}  
 
 .subtitle {
     font-size: 1.5rem;
@@ -127,38 +127,25 @@ nav a:hover {
     color: #666;
 }
 
-.button {
-    font-size: 14px;
-    padding: 5px 10px;
-    background-color: #F7941E;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    width: 160px;
-    height: 40px;
-
- }
-
 .content-right{
-    background-color: #f9f9f9;
     border-radius: 10px; 
-    box-shadow: 0 0 20px rgba(211, 223, 240, 0.961);
-    width: 50%;
+    width: 1000px;
     padding: 50px;
     box-sizing: border-box; /* O padding será incluído no tamanho total */
-  
-    
+     
 }
 
 .risk-labs h2 {
     color: #6A3DA5; /* Cor roxa do logo Risk Labs */
     font-size: 2rem;
     margin-bottom: 10px;
-    margin-top: 20px;
-    margin-right: 20px;
- 
+   
+    
+   
+  
 }
+ 
+
 
 footer {
     height: 140px;
@@ -213,3 +200,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
