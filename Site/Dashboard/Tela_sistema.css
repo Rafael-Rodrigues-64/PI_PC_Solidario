@@ -120,12 +120,12 @@
       border-radius: 5px;
   }
   
-  .pesquisar {
-      background-color:#1f3f61;
-  }
-  
   .cadastrar {
       background-color:#33cc33;
+  }
+  
+  .pesquisar {
+      background-color:#1f3f61;
   }
   
   .form-select {
@@ -192,6 +192,10 @@
   .pessoa-juridica {
       background-color: #ff704d;
       margin-right: 14px; 
+  }
+
+  .form-btn_a {
+    text-decoration: none;
   }
   
   .content-area {
