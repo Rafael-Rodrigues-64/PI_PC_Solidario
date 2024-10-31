@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel PC Solidário</title>
+    <link rel="stylesheet" href="Pesquisar_pj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+            <a href="Doador_pf_cadastro.html"><img src="../imagens/logopc-solidario_inteiro.png" alt="Logo do Site"></a>
+        </div>
+
+        <div class="user-info">
+                <span> Simone Amaral </span>
+                <div class="user-icon"></div>
+            </div>
+      </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Painel </a>
+                    <li><a href="../Dashboard/Doador_pf_cadastro.html"><i class="fa-solid fa-user"></i> Doador </a></li>
+                    <li><a href="Tela_Produtos/Tela_Produtos.html"><i class="fa-solid fa-desktop"></i>Produtos</a></li>
+                    <li><a href="#"><i class="fa-solid fa-building-user"></i> Instituições</a></li>
+                    <li><a href="#"><i class="fa-solid fa-folder-open"></i> Relatórios </a></li>
+                    <li><a href="#"><i class="fa-solid fa-recycle"></i>Trocas </a></li>
+                    <li><a href="#"><i class="fa-solid fa-gears"></i>Configurações </a></li>
+                </li>
+                </ul>
+            </nav>
+        </aside>
+    
+        <main class="main-content">
+
+            <div class="form-select">
+                <a href="Doador_pf_cadastro.html" class="form-btn_a"><button class="form-btn pessoa-fisica">Pessoa física</button></a>
+                <a href="Doador_pj_cadastro.html" class="form-btn_a"><button class="form-btn pessoa-juridica">Pessoa jurídica</button></a>
+            </div>
+
+            <div class="actions">
+                <button class="btn cadastrar">Cadastrar</button>
+                <button class="btn pesquisar">Pesquisar</button>
+            </div>
+
+             
+            
+            <div class="content-area">
+
+                <!-- <div class="btn-2">
+                    <button class="btn_Doar"><i class="fa-solid fa-plus"></i>  Doar</button>
+                </div>
+
+
+                
+                <div class="linha"></div> -->
+
+
+                <h2 class="end">Filtragem</h2>
+                <form class="Dados-Pessoais">
+                    <div class="div1 Dados-Pessoais">
+                            <label for="">Nome <span class="obrigat">*</span></label>
+                            <input type="text">
+
+                            <label for="selecionador">Selecione</label>
+                            <select id="selecionador">
+                                <option value="">Selecione</option>
+                                <option value="internos">Selecionar internos</option>
+                                <option value="externos">Selecionar externos</option>
+                                <option value="todos">Selecionar Todos</option>
+                            </select>
+                        
+                            <label for="data-inicio">Data de Início</label>
+                            <input type="date" id="data-inicio">
+                            
+                            <label for="data-fim">Data de Fim</label>
+                            <input type="date" id="data-fim">
+                            </select>
+
+                            <div class="Salvar">
+                                <button class="btn_salvar">Pesquisar</button>
+                             </div>    
+
+                    </div>
+                
