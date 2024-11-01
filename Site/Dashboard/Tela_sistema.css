@@ -118,6 +118,11 @@
       color: white;
       cursor: pointer;
       border-radius: 5px;
+      font-size: 16px;
+      
+  }
+  .btn:hover{
+    background-color: #0056b3;
   }
   
   .cadastrar {
@@ -181,11 +186,11 @@
       color: white;
       cursor: pointer;
       border-radius: 5px;
+      font-size: 16px;
   }
   
   .pessoa-fisica {
       background-color: #33cc33;
-      display: flex;
       margin-right: 14px;       
   }
   
@@ -198,6 +203,11 @@
     text-decoration: none;
   }
   
+  .form-btn:hover{
+    background-color: #0056b3;
+  }
+
+
   .content-area {
       background-color: #d9d5d5e1;
       height: 230vh;
@@ -231,6 +241,7 @@
    border-radius: 5px;
    padding-left: 15px;
    cursor: pointer;
+   font-size: 16px;
    }
 
    .end {
@@ -282,3 +293,4 @@
       
    
 }
+

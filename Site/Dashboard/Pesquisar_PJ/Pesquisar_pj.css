@@ -118,6 +118,11 @@
       color: white;
       cursor: pointer;
       border-radius: 5px;
+      font-size: 16px;
+  }
+
+  .btn:hover{
+    background-color: #0056b3;
   }
   
   .cadastrar {
@@ -181,6 +186,7 @@
       color: white;
       cursor: pointer;
       border-radius: 5px;
+      font-size: 16px;
   }
   
   .pessoa-fisica {
@@ -196,6 +202,10 @@
 
   .form-btn_a {
     text-decoration: none;
+  }
+
+  .form-btn:hover{
+    background-color: #0056b3;
   }
   
   .content-area {
