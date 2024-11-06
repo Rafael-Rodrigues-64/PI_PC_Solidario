@@ -263,24 +263,27 @@
       font-size: 12px;
   }
 
-   .Salvar{
-   display: flex;
-   justify-content: end;
-   color: #f5f6f5;
-   padding-top: 5px;
-   margin-right: 5px;
-
-  } 
-
-.btn_salvar{
+  .Salvar{
+    display: flex;
+    justify-content: end;
     color: #f5f6f5;
-    background-color:#1f3f61;
-    padding: 12px;
-    border-radius: 5px;
-    width:130px;
-    cursor: pointer;
-      
-}
+    padding-top: 5px;
+    margin-right: 5px;
+ 
+   } 
+ 
+ .btn_salvar{
+     color: #f5f6f5;
+     background-color:#1f3f61;
+     padding: 12px;
+     border-radius: 5px;
+     width:180px;
+     cursor: pointer;
+     margin-right: 53px;
+     margin-top: 20px;
+       
+    
+ }
 
 .btn-3{
 display: flex;
