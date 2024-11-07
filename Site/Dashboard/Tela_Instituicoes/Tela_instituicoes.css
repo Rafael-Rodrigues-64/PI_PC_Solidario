@@ -176,9 +176,9 @@
   .tipo{
     justify-content:left;
     padding: 40px;
+    
  }
-
-
+ 
   .form-btn {
       padding: 10px 20px;
       margin-right: 50px ;
@@ -209,21 +209,23 @@
 
 
   .content-area {
-      background-color: #d9d5d5e1;
-      height: 230vh;
-      margin-left: 8px;
-      margin-right: 8px; 
-  
-  }
+    background-color: #d9d5d5e1;
+    height: 230vh;
+    margin-left: 8px;
+    margin-right: 8px; 
+
+}
 
   .obrigat{
     color:red;
   }
 
-  .btn-2{
-    padding-top: 20px;
-    margin-left: 8px;
-  }
+  .btn-3{
+    display: flex;
+    justify-content:flex-start;
+    padding-top: 10px;
+    
+    }
 
   .btn_Novo{
    color: #f5f6f5;
@@ -294,5 +296,27 @@
     margin-top: 20px;
       
    
+}
+
+/* Estilizando os botões de navegação da página */
+button {
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1f3f61;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
 }
 
