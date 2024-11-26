@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painel PC Solidário</title>
+  <title>Relatórios - PC Solidário</title>
   <link rel="stylesheet" href="relatorios.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -11,29 +11,76 @@
   <div class="container">
     <header class="header">
       <div class="logo">
-          <a href="relátorios.html"><img src="../imagens/logopc-solidario_inteiro.png" alt="Logo do Site"></a>
+        <a href="relatorios.html"><img src="../imagens/logopc-solidario_inteiro.png" alt="Logo do Site"></a>
       </div>
-
       <div class="user-info">
-              <span> Simone Amaral </span>
-              <div class="user-icon"></div>
-          </div>
+        <span>Simone Amaral</span>
+        <div class="user-icon"></div>
+      </div>
     </header>
     <aside class="sidebar">
-        <nav>
-            <ul class="menu">
-                <li class="active"><a href="/Dashboard/Painel_inicial.html"><i class="fa-solid fa-house"></i> Painel </a>
-                <li><a href="../Dashboard/Doador_pf_cadastro.html"><i class="fa-solid fa-user"></i> Doador </a></li>
-                <li><a href="Tela_Produtos/Tela_Produtos.html"><i class="fa-solid fa-desktop"></i>Produtos</a></li>
-                <li><a href="#"><i class="fa-solid fa-building-user"></i> Instituições</a></li>
-                <li><a href="#"><i class="fa-solid fa-folder-open"></i> Relatórios </a></li>
-                <li><a href="#"><i class="fa-solid fa-recycle"></i>Trocas </a></li>
-                <li><a href="#"><i class="fa-solid fa-gears"></i>Configurações </a></li>
-            </li>
-            </ul>
-            
-        </nav>
-
+      <nav>
+        <ul class="menu">
+          <li><a href="/Dashboard/Painel_inicial.html"><i class="fa-solid fa-house"></i> Painel Inicial</a></li>
+          <li><a href=""><i class="fa-solid fa-user"></i> Doador</a></li>
+          <li><a href=""><i class="fa-solid fa-desktop"></i> Produtos</a></li>
+          <li><a href="#"><i class="fa-solid fa-building-user"></i> Instituições</a></li>
+          <li class="active"><a href="#"><i class="fa-solid fa-folder-open"></i> Relatórios</a></li>
+          <li><a href="#"><i class="fa-solid fa-recycle"></i> Trocas</a></li>
+          <li><a href="#"><i class="fa-solid fa-gears"></i> Configurações</a></li>
+        </ul>
+      </nav>
     </aside>
+    <main class="main">
+      <section class="report-header">
+        <h1>Relatórios</h1>
+        <div class="filters">
+          <label for="report-type">Tipo de Relatório:</label>
+          <select id="report-type">
+            <option value="doador">Doador</option>
+            <option value="produtos">Produtos</option>
+            <option value="instituicoes">Instituições</option>
+            <option value="trocas">Trocas</option>
+          </select>
+          <button class="btn-generate">Gerar Relatório</button>
+        </div>
+      </section>
+      <section class="report-table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Descrição</th>
+              <th>Data</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Doação de Computadores</td>
+              <td>25/11/2024</td>
+              <td>Concluído</td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Troca de Peças</td>
+              <td>20/11/2024</td>
+              <td>Pendente</td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>Doação de Monitores</td>
+              <td>18/11/2024</td>
+              <td>Concluído</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
     
         

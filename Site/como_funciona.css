@@ -1,201 +1,210 @@
+*/* Estilos Gerais */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
-     /* overflow-x: hidden;  */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
-    height: 120px;
-    display: flex;
-    justify-content: center;
     background: linear-gradient(-110deg, #58c0c5, #004aad);
-    /* Opções de degradê em graus*/
-    /* 90, 110, -110 180, 135,
-
-     */
-    /* background-color: rgb(76, 76, 165); Cor anterior*/
+    padding: 20px 0;
+    
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-}
-.logo {
-    display: flex;
     align-items: center;
-    width: 245px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
 .logo img {
-    width: 100%;
+    width: 150px;
 }
-.menu {
+
+.menu nav ul {
     display: flex;
-    align-items: center;
-}
-nav ul,
-nav li {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 15px;
 }
-nav ul {
-    display: flex;
-}
-nav a{
-    display: block;
-    padding: 15px;
+
+.menu nav a {
     text-decoration: none;
-    text-transform: uppercase;
     color: #fff;
-    font-weight: 600;
-    transition: all 0.4s;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
 }
-nav a:hover {
+
+.menu nav a:hover {
     color: #F7941E;
 }
 
 .icons {
     display: flex;
-    align-items: center;
+    gap: 10px;
 }
+
 .icons a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 30px;
     height: 30px;
     background-color: #fff;
-    border-radius: 15px;
-    margin-left: 10px;
-    transition: all 0.6s;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
 }
+
 .icons a:hover {
+    transform: scale(1.1);
     background-color: #F7941E;
 }
+
 .icons img {
     width: 20px;
-    height: 20px;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-* .container {
-    
-    padding: 10px;
-    background-color: #f4f4f4;
-}
-
-.main-content {
+/* Conteúdo Principal */
+.container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
-    border-bottom: 1px solid #e6e6e6;
+}
+
+.content-left {
+    flex: 2;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .content-left h1 {
-    font-size: 4rem;
-    color:#F7941E;
-   
-   
-}
-.content-left{
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content:;
-}  
-
-.subtitle {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 80px 0;
+    font-size: 2.5rem;
+    color: #F7941E;
+    margin-bottom: 15px;
 }
 
-.etapas {
-    margin: 20px 0;
-    font-size: 1.1rem;
-    color: #666;
+.content-left .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-.content-right{
-    border-radius: 10px; 
-    width: 1000px;
-    padding: 50px;
-    box-sizing: border-box; /* O padding será incluído no tamanho total */
-     
+.content-left .imagem {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.risk-labs h2 {
-    color: #6A3DA5; /* Cor roxa do logo Risk Labs */
+.content-right {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.content-right h2 {
     font-size: 2rem;
+    color: #6A3DA5;
     margin-bottom: 10px;
-      
-    
 }
- 
 
+.content-right .subtitle {
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
 footer {
-    height: 140px;
-    display: flex;
-    justify-content: center;
     background: linear-gradient(-110deg, #FCC48F, #cc701a);
+    padding: 20px 0;
+    color: #fff;
+    width: 100%;
+}
 
+.header.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.logo.footer {
-    max-width: 245px;
-}
+
 .meio--tel-email-end {
-    display: flex;    
-    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
 }
-.meio--tel-email-end .tel-email,
-.meio--tel-email-end .end {
+
+.tel-email, .end {
     display: flex;
     align-items: center;
-    padding-top: 15px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
-.meio--tel-email-end .tel-email img,
-.meio--tel-email-end .end img {
-    width: 21px;
-    height: 21px;
-    margin-right: 3px;
+
+.tel-email img, .end img {
+    width: 20px;
+    height: 20px;
 }
-.meio--tel-email-end .tel-email .num-tel {
-    margin-right: 20px;
-}
+
 .copyright {
-    display: flex;
-    margin-top: 36px;
+    text-align: center;
+    margin-top: 20px;
 }
+
 .copyright a {
     text-decoration: none;
-    color: #000;
-    font-size: 15px;
-    font-weight: 500;
-    padding-left: 70px;
-}
-.copyright h2 {
-    font-size: 15px;
-    font-weight: 500;
     color: #fff;
-    padding-right: 60px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+.copyright a:hover {
+    color: #000;
+}
 
-@media (max-width: 800px) {
-    .default_2 .section-body {
-        grid-template-columns: 1fr;
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
     }
-}
 
+    .menu nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .menu nav a {
+        padding: 10px 15px;
+    }
+
+    .icons {
+        margin-top: 10px;
+        gap: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .content-left, .content-right {
+        width: 100%;
+        margin-bottom: 15px;}
+    }
