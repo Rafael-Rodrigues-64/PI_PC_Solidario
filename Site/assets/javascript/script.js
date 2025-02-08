@@ -16,3 +16,11 @@ function proximaImg(){
 
 	document.getElementById('radio'+cont).checked = true
 }
+const btnMobile = Document.getElementById('btn-mobile');
+function ToggleMenu(){
+	const nav = document.getElementById('nav');
+	nav.classList.toggle('ative');
+}
+
+
+btnMobile.addEventlistEner('click',ToggleMenu )
