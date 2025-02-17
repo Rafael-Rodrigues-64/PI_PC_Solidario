@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
@@ -15,11 +14,7 @@ header {
     display: flex;
     justify-content: center;
     background: linear-gradient(-110deg, #58c0c5, #004aad);
-    /* Opções de degradê em graus*/
-    /* 90, 110, -110 180, 135,
-
-     */
-    /* background-color: rgb(76, 76, 165); Cor anterior*/
+   
 }
 
 .header {
@@ -33,35 +28,41 @@ header {
     width: 245px;
 }
 .logo img {
-    width: 100%;
+   width: 100%;
 }
-.menu {
-    /* display: flex; */
-    align-items: center;
-    padding: .5rem;
-}
-.btn-mobile{
+.hamburger {
     display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
-@media (max-width: 600px){
-    .btn-mobile{ 
-        display: block;}
-    .menu{ 
-        /* display: none; */
-        position: absolute;
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
         width: 100%;
-        top: 70px;
-        right: 0px;
-        display: block;
-        height: 100vh;
-        z-index: 1000;
-    }    
+        background: #004aad;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+    .menu ul.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
     .nav.nav.active-menu{
         display: flex;
 
 
     }
-
 }
 nav ul,
 nav li {
@@ -228,7 +229,6 @@ section.slider-Carrossel {
     border-radius: 4px;
 }
 
-
 .default_2 { /* Área Impacto Social (Sistema)...*/
     background-color: rgba(0, 0, 0, 0.8);
     padding-bottom: 50px;
@@ -246,7 +246,6 @@ section.slider-Carrossel {
     max-width: 1200px;
     margin: auto;
 }
-
 
 /* CSS DE ÁREAS ESPECÍFICAS 
 Largura área notícias: 345px
@@ -360,9 +359,6 @@ Altura área notícias 2 parte (conteúdo): 386px
     
 }
 
-
-
-
 /* Área Impacto Social (Específica)...*/
 .default_2 .section-body {
     display: grid;
@@ -409,7 +405,6 @@ Altura área notícias 2 parte (conteúdo): 386px
     font-size: 19px;
 }
 
-
 footer {
     height: 140px;
     display: flex;
@@ -455,8 +450,6 @@ footer {
     color: #fff;
     padding-right: 60px;
 }
-
-
 
 @media (max-width: 800px) {
     .default_2 .section-body {
