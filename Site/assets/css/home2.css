@@ -22,6 +22,7 @@ header {
     justify-content: space-between;
     width: 1200px;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -30,6 +31,7 @@ header {
 .logo img {
    width: 100%;
 }
+.btn-mobile {
 .hamburger {
     display: none;
     flex-direction: column;
@@ -64,6 +66,8 @@ header {
 
     }
 }
+   
+
 nav ul,
 nav li {
     list-style: none;
