@@ -31,7 +31,7 @@ header {
 .logo img {
    width: 100%;
 }
-.btn-mobile {
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -66,7 +66,7 @@ header {
 
     }
 }
-   
+
 
 nav ul,
 nav li {
@@ -395,7 +395,6 @@ Altura área notícias 2 parte (conteúdo): 386px
     width: 67px;
     
 }
-
 .default_2 .itemarea span {
     font-weight: bolder;
     font-size: 23px;
@@ -415,6 +414,13 @@ footer {
     justify-content: center;
     background: linear-gradient(-110deg, #FCC48F, #cc701a);
 }
+@media(max-width:700px){
+    .footer{
+       flex-direction: column;
+       
+    }
+    }
+
 .logo.footer {
     max-width: 245px;
 }
