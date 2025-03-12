@@ -59,6 +59,7 @@ header {
     }
     .hamburger {
         display: flex;
+        
     }
     .nav.nav.active-menu{
         display: flex;
@@ -76,6 +77,7 @@ nav li {
 }
 nav ul {
     display: flex;
+    
 }
 nav a{
     display: block;
@@ -347,6 +349,7 @@ Altura área notícias 2 parte (conteúdo): 386px
 .noticias-mais .simbolo {
     font-size: 10px;
     font-weight: 900;
+    
 }
 
 .noticias-data {
@@ -407,62 +410,107 @@ Altura área notícias 2 parte (conteúdo): 386px
 .default_2 .itemarea p {
     font-size: 19px;
 }
+@media (max-width: 700px) {
+    .default_2 .section-title h2 {
+        font-size: 50px; /* Reduz o tamanho da fonte */
+    }
+}
+
+@media (max-width: 408px) {
+    .default_2 .section-title h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 408px) {
+    .default_2 .section-title h2 {
+        font-size: 32px;
+    }
+}
 
 footer {
-    height: 140px;
+    height: auto;
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background: linear-gradient(-110deg, #FCC48F, #cc701a);
+    text-align: center;
 }
-@media(max-width:700px){
-    .footer{
-       flex-direction: column;
-       
-    }
-    }
 
 .logo.footer {
-    max-width: 245px;
+    max-width: 200px;
 }
+
 .meio--tel-email-end {
-    display: flex;    
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
+
 .meio--tel-email-end .tel-email,
 .meio--tel-email-end .end {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-top: 15px;
+    flex-wrap: wrap;
 }
+
 .meio--tel-email-end .tel-email img,
 .meio--tel-email-end .end img {
     width: 21px;
     height: 21px;
     margin-right: 3px;
 }
+
 .meio--tel-email-end .tel-email .num-tel {
-    margin-right: 20px;
+    margin-right: 10px;
 }
+
 .copyright {
     display: flex;
-    margin-top: 36px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
 }
+
 .copyright a {
     text-decoration: none;
     color: #000;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
-    padding-left: 70px;
-}
-.copyright h2 {
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    padding-right: 60px;
+    padding: 5px 0;
 }
 
-@media (max-width: 800px) {
-    .default_2 .section-body {
-        grid-template-columns: 1fr;
+.copyright h2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 0;
+}
+
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        
+    }
+    .meio--tel-email-end {
+        align-items: flex-start;
+    }
+    .copyright {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .copyright a {
+        padding-left: 20px;
+    }
+    .copyright h2 {
+        padding-right: 20px;
     }
 }
