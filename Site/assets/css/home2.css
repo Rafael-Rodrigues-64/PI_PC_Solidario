@@ -42,6 +42,7 @@ header {
     height: 3px;
     background: white;
     margin: 5px 0;
+    
 }
 @media (max-width: 768px) {
     .menu ul {
@@ -53,21 +54,24 @@ header {
         top: 50px;
         left: 0;
         text-align: center;
+        align-items: center;
     }
     .menu ul.active {
         display: flex;
+        
     }
     .hamburger {
         display: flex;
+       
         
     }
     .nav.nav.active-menu{
         display: flex;
+        
 
 
     }
 }
-
 
 nav ul,
 nav li {
@@ -356,7 +360,6 @@ Altura área notícias 2 parte (conteúdo): 386px
     border-top: 1px solid #ccc;
     border-radius: 0px 0px 8px 8px;
 }
-
 .data_noticia {
     font-size: 13px;
     color: #7a7a7a;
@@ -491,7 +494,6 @@ footer {
     color: #fff;
     padding: 5px 0;
 }
-
 
 @media (min-width: 768px) {
     footer {

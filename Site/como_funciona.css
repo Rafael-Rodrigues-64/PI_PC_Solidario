@@ -80,7 +80,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
 }
@@ -181,17 +180,11 @@ footer {
 /* Estilo Responsivo */
 @media (max-width: 768px) {
     .header {
-    
+        max-width: 1200px;
         flex-direction: column;
         align-items: center;
     }
-    /* .meio--tel-email-end {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        margin-top: 20px;
-    }
-     */
+  
     .menu nav ul {
         flex-direction: column;
         gap: 10px;
@@ -214,4 +207,5 @@ footer {
     .content-left, .content-right {
         width: 100%;
         margin-bottom: 15px;}
+
     }
