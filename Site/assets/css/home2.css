@@ -67,7 +67,7 @@ header {
     }
     .nav.nav.active-menu{
         display: flex;
-        
+      
 
 
     }
@@ -383,8 +383,7 @@ Altura área notícias 2 parte (conteúdo): 386px
     font-size: 20px;
     border-radius: 25px;
     min-height: 157px;
-    /* Opções de degradê em graus*/
-    /* 90, 110, -110, 180, 135 */ 
+    
 }
 
 .default_2 .itemarea {
@@ -413,7 +412,8 @@ Altura área notícias 2 parte (conteúdo): 386px
 .default_2 .itemarea p {
     font-size: 19px;
 }
-@media (max-width: 700px) {
+
+@media (max-width: 768px) {
     .default_2 .section-title h2 {
         font-size: 50px; /* Reduz o tamanho da fonte */
     }
