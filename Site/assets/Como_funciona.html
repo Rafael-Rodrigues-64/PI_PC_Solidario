@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Funciona - PC Solidário</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="shortcut icon" href="../assets/images/logopc-solidario_reduz_tranp.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/como_funciona.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index2.html"><img src="../assets/images/logoPCSOLIDARIO02.png" alt="Logo PC Solidário"></a>
+            </div>
+            
+            <button class="hamburger" id="btn-mobile" aria-label="Menu" aria-expanded="false">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            
+            <nav id="nav">
+                <ul id="nav-links">
+                    <li><a href="index2.html">Início</a></li>
+                    <li><a href="Como_funciona.html">Como Funciona</a></li>
+                    <li><a href="quem_somos.html">Quem Somos</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-como-funciona">
+        <div class="container">
+            <div class="main-content">
+                <div class="content-left">
+                    <h1>Como Funciona</h1>
+                    <p class="subtitle">Um projeto de coleta de lixo eletrônico, como o "PC Solidário", é uma iniciativa que visa recolher equipamentos eletrônicos que não são mais usados, como computadores, monitores, celulares, impressoras, entre outros, para dar-lhes um destino sustentável. O projeto geralmente tem as seguintes etapas e objetivos:</p>
+
+                    <div class="image-grid">
+                        <img class="imagem" src="../media/img.1.png" alt="Processo de coleta de lixo eletrônico">
+                        <img class="imagem" src="../media/2.png" alt="Benefícios do projeto">
+                    </div>
+                </div>
+                
+                <div class="content-right">
+                    <div class="risk-labs">
+                        <h2>PC Solidário</h2>
+                        <p class="subtitle">O PC Solidário gera um impacto positivo tanto no âmbito social quanto no ambiental. Ao evitar que eletrônicos sejam descartados incorretamente, o projeto minimiza o impacto ambiental causado por resíduos tóxicos, como metais pesados, presentes em computadores e componentes eletrônicos. Ao mesmo tempo, transforma o que seria lixo em uma oportunidade para a educação, o trabalho e o desenvolvimento pessoal de muitas pessoas.</p>
+                        <p class="subtitle">O PC Solidário é uma poderosa ferramenta de transformação social e sustentabilidade, promovendo um ciclo virtuoso de reaproveitamento tecnológico e inclusão digital para um futuro mais justo e sustentável.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo footer">
+                <a href="index2.html"><img src="../assets/images/logoPCSOLIDARIO02.png" alt="Logo PC Solidário"></a>
+            </div>
+            
+            <div class="footer-contacts">
+                <div class="contact-item">
+                    <img src="../assets/images/telefone.png" alt="Telefone">
+                    <span>(91) 98472-4793</span>
+                    <img src="../assets/images/o-email.png" alt="E-mail">
+                    <span>projetopcsolidario@gmail.com</span>
+                </div>
+               <div class="contact-item">
+                    <img src="../assets/images/fixar-mapa.png" alt="Endereço">
+                    <span>Rua Aristides Lobo, 1058 - Bairro do Reduto, Belém - PA</span>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 PC Solidário. Todos os direitos reservados</p>
+                    <a href="#">Desenvolvido por Dream Team</a>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" aria-label="WhatsApp"><img src="../assets/images/whatsapp.png" alt="WhatsApp"></a>
+                <a href="#" aria-label="Instagram"><img src="../assets/images/instagram.png" alt="Instagram"></a>
+                <a href="#" aria-label="Facebook"><img src="../assets/images/logo-do-facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="Twitter"><img src="../assets/images/twitter.png" alt="Twitter"></a>
+            </div>
+            
+           
+        </div>
+    </footer>
+
+    <script>
+        // Menu Hamburguer
+        const btnMobile = document.getElementById('btn-mobile');
+        const nav = document.getElementById('nav');
+        
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault();
+            nav.classList.toggle('active');
+            const isActive = nav.classList.contains('active');
+            btnMobile.setAttribute('aria-expanded', isActive);
+            document.body.style.overflow = isActive ? 'hidden' : 'auto';
+        }
+        
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+        
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('#nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                btnMobile.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = 'auto';
+            });
+        });
+    </script>
+</body>
+</html>

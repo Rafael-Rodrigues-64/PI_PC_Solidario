@@ -4,83 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Solidário2</title>
+    <title>PC Solidário</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="shortcut icon" href="assets/images/logopc-solidario_reduz_tranp.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/home2.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/depoimentos2.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" type="text/css">
-     
-
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/home2.css">
+    <link rel="stylesheet" href="../assets/css/depoimentos.css">
+    <link rel="stylesheet" href="../assets/css/como_funciona.css">
+    <link rel="stylesheet" href="../assets/css/quem_somos.css">
+    
 </head>
 
 <body>
     <header>
         <div class="header">
-            <!-- <button id="btn-mobile"></button> -->
             <div class="logo">
-                <a href="index2.html"><img src="assets/images/logoPCSOLIDARIO02.png" alt="Logo do Site"></a>
+                <a href="index2.html"><img src="../assets/images/logoPCSOLIDARIO02.png" alt="Logo PC Solidário"></a>
             </div>
-            <div class="menu">
-                <nav id = "nav">
-                  
-                    <ul>
-                        <li><a href="index2.html">Início</a></li>
-                        <li><a href="Como_funciona.html">Como Funciona</a></li>
-                        <li><a href="quem_somos.html">Quem Somos</a></li>
-                        <li><a href="noticias.html">Notícias</a></li>
-                    </ul>
-                </nav>
-                <script>
-                    function toggleMenu() {
-                        const menu = document.getElementById('nav-links');
-                        menu.classList.toggle('active');
-                    }
-                </script>
-            </div>
-           
+            
+            <button class="hamburger" id="btn-mobile" aria-label="Menu" aria-expanded="false">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            
+            <nav id="nav">
+                <ul id="nav-links">
+                    <li><a href="index2.html">Início</a></li>
+                    <li><a href="Como_funciona.html">Como Funciona</a></li>
+                    <li><a href="quem_somos.html">Quem Somos</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section class="slider-Carrossel"> <!-- Carrossel -->
+        <section class="slider-Carrossel">
             <div class="slider-content-Carrossel">
-
-                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio1" checked>
                 <input type="radio" name="btn-radio" id="radio2">
                 <input type="radio" name="btn-radio" id="radio3">
-
-                <div class="slide-box primeiro">
-                    <a href=""><img src="assets/images/banner_azul_contribua.png" alt="slide 1"></a>
+        
+                <div class="slides-container">
+                    <div class="slide-box primeiro">
+                        <a href="#"><img src="../assets/images/banner_azul_contribua.png" alt="Contribua com o projeto"></a>
+                    </div>
+        
+                    <div class="slide-box">
+                        <a href="#"><img src="../assets/images/banner _IMAGENS_lixo_eletronico.png" alt="Lixo eletrônico"></a>
+                    </div>
+        
+                    <div class="slide-box">
+                        <a href="#"><img src="../assets/images/banner_O_QUE_É_LIXO.png" alt="O que é lixo eletrônico"></a>
+                    </div>
                 </div>
-
-                <div class="slide-box">
-                    <a href=""><img src="assets/images/banner _IMAGENS_lixo_eletronico.png" alt="slide 2"></a>
-                </div>
-
-                <div class="slide-box">
-                    <a href=""><img src="assets/images/banner_O_QUE_É_LIXO.png" alt="slide 3"></a>
-                </div>
-
+        
                 <div class="nav-auto">
                     <div class="auto-btn1"></div>
                     <div class="auto-btn2"></div>
                     <div class="auto-btn3"></div>
                 </div>
-
+        
                 <div class="nav-manual">
                     <label for="radio1" class="manual-btn"></label>
                     <label for="radio2" class="manual-btn"></label>
                     <label for="radio3" class="manual-btn"></label>
                 </div>
-
             </div>
         </section>
 
         <section class="banner-main-defaults">
             <div class="banner-main-defaults--sombra">
                 <section class="default">
-                    <div class="section-title noticias"> <!-- Área Notícias -->
+                    <div class="section-title noticias">
                         <h2>Notícias</h2>
                     </div>
                     <div class="section-desc">
@@ -93,7 +88,7 @@
                                 <article class="noticias--areas">
                                     <div class="noticias-img">
                                         <a href="html_area_noticias/areaNoticias1.html"><img
-                                                src="media/areaNoticias1.0.jpg" alt=""></a>
+                                                src="../assets/images/imagem-turma-pc-solidario.jpg" alt=""></a>
                                     </div>
                                     <div class="noticias-title-desc-mais">
                                         <h2><a href="html_area_noticias/areaNoticias1.html">Alunos detalham o passo a
@@ -103,7 +98,6 @@
                                         <p>No dia 21 de fevereiro alguns alunos do Projeto PC Solidário fizeram uma
                                             apresentação geral dos estágios que foram ocorrendo um por um de uma forma
                                             detalhada.</p>
-
 
                                         <a class="noticias-mais" href="html_area_noticias/areaNoticias1.html"><span
                                                 class="palavra">Leia mais </span> <span class="simbolo"> >> </span></a>
@@ -173,7 +167,57 @@
                                     <div class="image-content">
                                         <span class="overlay"></span>
                                         <div class="card-image">
-                                            <img src="media/area_home_dep_1.jpg" alt="" class="card-img">
+                                            <img src="../media/area_home_dep_1.jpg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Rafael Gomes</h2>
+                                        <div class="description-div"></div>
+                                        <p class="description"><img src="../assets/images/quote.png"
+                                                class="img-description_1" alt="">The lorem text the section that
+                                            contains header with having open functionality. lorem dolor sit amet
+                                            consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
+                                            sit amet consectetur dolor sit amet.<img src="../assets/images/quote.png"
+                                                alt="" class="img-description_2"></p>
+                                        <div class="info-name">
+                                            <div class="info-name--desc">
+                                                <span>Instituição: Ong tal</span>
+                                                <span>Colocação: Diretor Reginal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="../media/area_home_dep_3.jpg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Rafael Gomes</h2>
+                                        <div class="description-div"></div>
+                                        <p class="description"><img src="../assets/images/quote.png"
+                                                class="img-description_1" alt="">The lorem text the section that
+                                            contains header with having open functionality. lorem dolor sit amet
+                                            consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
+                                            sit amet consectetur dolor sit amet.<img src="../assets/images/quote.png"
+                                                alt="" class="img-description_2"></p>
+                                        <div class="info-name">
+                                            <div class="info-name--desc">
+                                                <span>Instituição: Ong tal</span>
+                                                <span>Colocação: Diretor Reginal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="../media/area_home_dep_4.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
                                     <div class="card-content">
@@ -183,32 +227,7 @@
                                                 class="img-description_1" alt="">The lorem text the section that
                                             contains header with having open functionality. lorem dolor sit amet
                                             consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
-                                            sit amet consectetur dolor sit amet.<img src="assets/images/quote.png"
-                                                alt="" class="img-description_2"></p>
-                                        <div class="info-name">
-                                            <div class="info-name--desc">
-                                                <span>Instituição: Ong tal</span>
-                                                <span>Colocação: Diretor Reginal</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-
-                                        <div class="card-image">
-                                            <img src="media/area_home_dep_2.jpg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="name">Rafael Gomes</h2>
-                                        <p class="description"><img src="assets/images/quote.png"
-                                                class="img-description_1" alt="">The lorem text the section that
-                                            contains header with having open functionality. lorem dolor sit amet
-                                            consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
-                                            sit amet consectetur dolor sit amet.<img src="assets/images/quote.png"
+                                            sit amet consectetur dolor sit amet.<img src="../assets/images/quote.png"
                                                 alt="" class="img-description_2"></p>
                                         <div class="info-name">
                                             <div class="info-name--desc">
@@ -223,16 +242,17 @@
                                     <div class="image-content">
                                         <span class="overlay"></span>
                                         <div class="card-image">
-                                            <img src="media/area_home_dep_3.jpg" alt="" class="card-img">
+                                            <img src="../media/area_home_dep_6.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
                                     <div class="card-content">
                                         <h2 class="name">Rafael Gomes</h2>
-                                        <p class="description"><img src="assets/images/quote.png"
+                                        <div class="description-div"></div>
+                                        <p class="description"><img src="../assets/images/quote.png"
                                                 class="img-description_1" alt="">The lorem text the section that
                                             contains header with having open functionality. lorem dolor sit amet
                                             consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
-                                            sit amet consectetur dolor sit amet.<img src="assets/images/quote.png"
+                                            sit amet consectetur dolor sit amet.<img src="../assets/images/quote.png"
                                                 alt="" class="img-description_2"></p>
                                         <div class="info-name">
                                             <div class="info-name--desc">
@@ -246,42 +266,18 @@
                                 <div class="card swiper-slide">
                                     <div class="image-content">
                                         <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="media/area_home_dep_4.jpg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="name">Rafael Gomes</h2>
-                                        <p class="description"><img src="assets/images/quote.png"
-                                                class="img-description_1" alt="">The lorem text the section that
-                                            contains header with having open functionality. lorem dolor sit amet
-                                            consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
-                                            sit amet consectetur dolor sit amet.<img src="assets/images/quote.png"
-                                                alt="" class="img-description_2"></p>
-                                        <div class="info-name">
-                                            <div class="info-name--desc">
-                                                <span>Instituição: Ong tal</span>
-                                                <span>Colocação: Diretor Reginal</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-
                                         <div class="card-image">
                                             <img src="media/area_home_dep_5.jpg" alt="" class="card-img">
                                         </div>
                                     </div>
                                     <div class="card-content">
                                         <h2 class="name">Rafael Gomes</h2>
-                                        <p class="description"><img src="assets/images/quote.png"
+                                        <div class="description-div"></div>
+                                        <p class="description"><img src="../assets/images/quote.png"
                                                 class="img-description_1" alt="">The lorem text the section that
                                             contains header with having open functionality. lorem dolor sit amet
                                             consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
-                                            sit amet consectetur dolor sit amet.<img src="assets/images/quote.png"
+                                            sit amet consectetur dolor sit amet.<img src="../assets/images/quote.png"
                                                 alt="" class="img-description_2"></p>
                                         <div class="info-name">
                                             <div class="info-name--desc">
@@ -292,102 +288,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-
-                                        <div class="card-image">
-                                            <img src="media/area_home_dep_6.jpg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="name">Rafael Gomes</h2>
-                                        <p class="description"><img src="assets/images/quote.png"
-                                                class="img-description_1" alt="">The lorem text the section that
-                                            contains header with having open functionality. lorem dolor sit amet
-                                            consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
-                                            sit amet consectetur dolor sit amet.<img src="assets/images/quote.png"
-                                                alt="" class="img-description_2"></p>
-                                        <div class="info-name">
-                                            <div class="info-name--desc">
-                                                <span>Instituição: Ong tal</span>
-                                                <span>Colocação: Diretor Reginal</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="media/area_home_dep_7_copy.jpg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="name">Rafael Gomes</h2>
-                                        <p class="description"><img src="assets/images/quote.png"
-                                                class="img-description_1" alt="">The lorem text the section that
-                                            contains header with having open functionality. lorem dolor sit amet
-                                            consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
-                                            sit amet consectetur dolor sit amet.<img src="assets/images/quote.png"
-                                                alt="" class="img-description_2"></p>
-                                        <div class="info-name">
-                                            <div class="info-name--desc">
-                                                <span>Instituição: Ong tal</span>
-                                                <span>Colocação: Diretor Reginal</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="media/area_home_dep_8_copy.jpg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="name">Rafael Gomes</h2>
-                                        <p class="description"><img src="assets/images/quote.png"
-                                                class="img-description_1" alt="">The lorem text the section that
-                                            contains header with having open functionality. lorem dolor sit amet
-                                            consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
-                                            sit amet consectetur dolor sit amet.<img src="assets/images/quote.png"
-                                                alt="" class="img-description_2"></p>
-                                        <div class="info-name">
-                                            <div class="info-name--desc">
-                                                <span>Instituição: Ong tal</span>
-                                                <span>Colocação: Diretor Reginal</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="media/area_home_dep_9_quadrado.png" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="name">Rafael Gomes</h2>
-                                        <p class="description"><img src="assets/images/quote.png"
-                                                class="img-description_1" alt="">The lorem text the section that
-                                            contains header with having open functionality. lorem dolor sit amet
-                                            consectetur adipisicing elit. lorem dolor sit amet consectetur. lorem dolor
-                                            sit amet consectetur dolor sit amet.<img src="assets/images/quote.png"
-                                                alt="" class="img-description_2"></p>
-                                        <div class="info-name">
-                                            <div class="info-name--desc">
-                                                <span>Instituição: Ong tal</span>
-                                                <span>Colocação: Diretor Reginal</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- Outros cards de depoimentos... -->
 
                             </div>
                         </div>
@@ -396,26 +297,25 @@
                         <div class="swiper-button-prev swiper-navBtn"></div>
                         <div class="swiper-pagination"></div>
                     </div>
-
                 </section>
 
-                <section class="default_2"> <!-- Área impacto social -->
+                <section class="default_2">
                     <div class="section-title impctSocial">
                         <h2>Impacto Social</h2>
                     </div>
                     <div class="section-body">
                         <div class="item">
                             <div class="itemarea">
-                                <img src="assets/images/aluna.png" alt="">
+                                <img src="../assets/images/aluna.png" alt="">
 
-                                <span>50 cinquanta</span>
+                                <span>50 cinquenta</span>
 
                                 <p>Alunos Beneficiados</p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="itemarea">
-                                <img src="assets/images/computador.png" alt="">
+                                <img src="../assets/images/computador.png" alt="">
 
                                 <span>+1 mil</span>
 
@@ -424,7 +324,7 @@
                         </div>
                         <div class="item">
                             <div class="itemarea">
-                                <img src="assets/images/aperto-de-mao.png" alt="">
+                                <img src="../assets/images/aperto-de-mao.png" alt="">
 
                                 <span>5 cinco</span>
 
@@ -433,7 +333,7 @@
                         </div>
                         <div class="item">
                             <div class="itemarea">
-                                <img src="assets/images/cidade.png" alt="">
+                                <img src="../assets/images/cidade.png" alt="">
 
                                 <span>2 duas</span>
 
@@ -442,7 +342,7 @@
                         </div>
                         <div class="item">
                             <div class="itemarea">
-                                <img src="assets/images/brasil.png" alt="">
+                                <img src="../assets/images/brasil.png" alt="">
 
                                 <span>2 oito</span>
 
@@ -451,7 +351,7 @@
                         </div>
                         <div class="item">
                             <div class="itemarea">
-                                <img src="assets/images/lixeira.png" alt="">
+                                <img src="../assets/images/lixeira.png" alt="">
 
                                 <span>+1 tonelada</span>
 
@@ -460,22 +360,41 @@
                         </div>
                         <div class="item">
                             <div class="itemarea">
-                                <img src="assets/images/ondas-de-agua.png" alt="">
+                                <img src="../assets/images/aluna.png" alt="">
 
-                                <span>+100 mil</span>
+                                <span>50 cinquenta</span>
 
-                                <p>Litros de água economezados</p>
+                                <p>Alunos Beneficiados</p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="itemarea">
-                                <img src="assets/images/barril-de-petroleo (1).png" alt="">
+                                <img src="../assets/images/computador.png" alt="">
 
-                                <span>+10 mil</span>
+                                <span>+1 mil</span>
 
-                                <p>Barris de petróleo poupados</p>
+                                <p>Computadores doados</p>
                             </div>
                         </div>
+                        <div class="item">
+                            <div class="itemarea">
+                                <img src="../assets/images/computador.png" alt="">
+
+                                <span>+1 mil</span>
+
+                                <p>Computadores doados</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="itemarea">
+                                <img src="../assets/images/computador.png" alt="">
+
+                                <span>+1 mil</span>
+
+                                <p>Computadores doados</p>
+                            </div>
+                        </div>
+                    </div>
 
                     </div>
                 </section>
@@ -483,21 +402,20 @@
         </section>
     </main>
 
-
     <footer>
         <div class="header footer">
             <div class="logo footer">
-                <a href=""><img src="assets/images/logoPCSOLIDARIO02.png" alt="Logo do Site"></a>
+                <a href=""><img src="../assets/images/logoPCSOLIDARIO02.png" alt="Logo do Site"></a>
             </div>
             <div class="meio--tel-email-end">
                 <div class="tel-email">
-                    <img src="assets/images/telefone.png" alt="">
+                    <img src="../assets/images/telefone.png" alt="">
                     <div class="num-tel"><span class="tel">(91)98472-4793</span></div>
-                    <img src="assets/images/o-email.png" alt="">
+                    <img src="../assets/images/o-email.png" alt="">
                     <div><span class="email">projetopcsolidario@gmail.com</span></div>
                 </div>
                 <div class="end">
-                    <img src="assets/images/fixar-mapa.png" alt="">
+                    <img src="../assets/images/fixar-mapa.png" alt="">
                     <div><span>Rua Aristides Lobo, 1058 - Bairro do Reduto, Belém - PA</span></div>
                 </div>
                 <div class="copyright">
@@ -506,19 +424,50 @@
                 </div>
             </div>
             <div class="icons footer">
-                <a href=""><img src="assets/images/whatsapp.png" alt="icon_twitter "></a>
-                <a href=""><img src="assets/images/instagram.png" alt="icon_twitter "></a>
-                <a href=""><img src="assets/images/logo-do-facebook.png" alt="icon_twitter "></a>
-                <a href=""><img src="assets/images/twitter.png" alt="icon_twitter "></a>
+                <a href=""><img src="../assets/images/whatsapp.png" alt="icon_twitter "></a>
+                <a href=""><img src="../assets/images/instagram.png" alt="icon_twitter "></a>
+                <a href=""><img src="../assets/images/logo-do-facebook.png" alt="icon_twitter "></a>
+                <a href=""><img src="../assets/images/twitter.png" alt="icon_twitter "></a>
             </div>
         </div>
     </footer>
+
+    <script src="../assets/javascript/swiper-bundle.min.js"></script>
+    <script>
+        // Menu Hamburguer
+        const btnMobile = document.getElementById('btn-mobile');
+        const nav = document.getElementById('nav');
+        
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault();
+            nav.classList.toggle('active');
+            const isActive = nav.classList.contains('active');
+            btnMobile.setAttribute('aria-expanded', isActive);
+            document.body.style.overflow = isActive ? 'hidden' : 'auto';
+        }
+        
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+        
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('#nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                btnMobile.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // Carrossel principal automático
+        let counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+    <script src="assets/javascript/swiper.js"></script>
 </body>
-
-<!-- Swiper JS -->
-<script type="text/javascript" src="assets/javascript/swiper-bundle.min.js"></script>
-
-<!-- JavaScript -->
-<script type="text/javascript" src="assets/javascript/swiper.js"></script>
-<script type="text/javascript" src="assets/javascript/script.js" defer></script>
 </html>
