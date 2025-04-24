@@ -1,5 +1,5 @@
 body {
-    background-color: #0c1014;
+    background-color: #3d6d9e;
     color: white;
     width: 90%;
     max-width: 960px;
@@ -98,7 +98,7 @@ a.header__nav--active {
 
 .pricing-plan__cta {
     text-decoration: none;
-    color: #0c1014;
+    color: #38526c;
     background-color: #cbe300;
     border-radius: 6px;
     text-transform: uppercase;

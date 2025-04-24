@@ -2,111 +2,190 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/css_area_noticias/area_noticias.css" type="text/css">
+    <title>Notícia - Alunos detalham processo de doações - PC Solidário</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="shortcut icon" href="../assets/images/logopc-solidario_reduz_tranp.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/home2.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&family=Staatliches&display=swap">
-    
-    
-    <title>Area_Notícias</title>
+    <link rel="stylesheet" href="../assets/css/css_area_noticias/area_noticias.css">
 </head>
+
 <body>
     <header>
         <div class="header">
             <div class="logo">
-                <a href="../index2.html"><img src="../assets/images/logoPCSOLIDARIO02.png" alt="Logo do Site"></a>
+                <a href="index2.html"><img src="../assets/images/logoPCSOLIDARIO02.png" alt="Logo PC Solidário"></a>
             </div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="../index2.html">Início</a></li>
-                        <li><a href="#">Como Funciona</a></li>
-                        <li><a href="../quem_somos.html">Quem Somos</a></li>
-                        <li><a href="../noticias.html">Notícias</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="icons">
-                <a href=""><img src="../assets/images/whatsapp.png" alt="icon_twitter "></a>
-                <a href=""><img src="../assets/images/instagram.png" alt="icon_twitter "></a>
-                <a href=""><img src="../assets/images/logo-do-facebook.png" alt="icon_twitter "></a>
-                <a href=""><img src="../assets/images/twitter.png" alt="icon_twitter "></a>
-            </div>
+            
+            <button class="hamburger" id="btn-mobile" aria-label="Menu" aria-expanded="false">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            
+            <nav id="nav">
+                <ul id="nav-links">
+                    <li><a href="../index2.html">Início</a></li>
+                    <li><a href="../Como_funciona.html">Como Funciona</a></li>
+                    <li><a href="../quem_somos.html">Quem Somos</a></li>
+                    <li><a href="../noticias.html">Notícias</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="section-titulo">
-        <div class="container">
-            <div class="data">
-                <div class="data-img">
-                    <img src="../assets/images/calendario.png" alt="calendário">
+    <main class="main-noticia">
+        <article class="noticia-container">
+            <div class="noticia-header">
+                <div class="noticia-meta">
+                    <span class="noticia-date">
+                        <img src="../assets/images/calendario.png" alt="Ícone de calendário">
+                        21 de fevereiro, 2022
+                    </span>
+                    <a href="../noticias.html" class="back-link">
+                        <span class="material-symbols-outlined">arrow_back</span> Voltar para Notícias
+                    </a>
                 </div>
-                <div class="data-desc">
-                    <span>21 de fevereiro, 2022</span>
-                </div>
+                
+                <h1 class="noticia-title">Alunos detalham o passo a passo para doações, triagem de materiais e entrega para instituições</h1>
             </div>
-            <div class="titulo">
-                <h1>Alunos detalham o passo a passa para doações, triagem de materiais e entrega para instituições.</h1>
-            </div>
-        </div>
-    </section>
 
-    <section class="section-desc-img">
-            <div class="img-body">
-                <p>No dia 21 de fevereiro alguns alunos do Projeto PC Solidário fizeram uma apresentação geral dos estágios que foram ocorrendo um por um de uma forma detalhada.</p>
-                <div class="container-body">
-                    <div class="img-container img1">
-                        <img src="../media/areaNoticias1.0.jpg" alt="">
+            <div class="noticia-content">
+                <p class="noticia-intro">No dia 21 de fevereiro, alunos do Projeto PC Solidário fizeram uma apresentação detalhada de todos os estágios do processo de doação.</p>
+                
+                <figure class="noticia-image featured">
+                    <img src="../media/areaNoticias1.0.jpg" alt="Alunos apresentando o projeto">
+                    <figcaption>Alunos durante apresentação do projeto PC Solidário</figcaption>
+                </figure>
+                
+                <div class="noticia-text">
+                    <p>O projeto PC Solidário tem revolucionado a forma como equipamentos eletrônicos são reaproveitados e doados para instituições carentes. Durante a apresentação, os alunos detalharam cada etapa do processo, desde a coleta dos materiais até a entrega final.</p>
+                    
+                    <p>O processo começa com a triagem cuidadosa de todos os equipamentos recebidos. "Cada peça é testada e avaliada individualmente", explicou um dos alunos. "Nosso objetivo é garantir que tudo o que for doado esteja em perfeitas condições de uso."</p>
+                </div>
+                
+                <div class="noticia-gallery">
+                    <figure class="gallery-item">
+                        <img src="../media/areaNoticias1.1.jpg" alt="Processo de triagem">
+                        <figcaption>Etapa de triagem dos materiais doados</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../media/areaNoticias1.2.jpg" alt="Equipamentos preparados">
+                        <figcaption>Equipamentos sendo preparados para doação</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../media/areaNoticias1.3.jpg" alt="Entrega para instituição">
+                        <figcaption>Momento da entrega para a instituição beneficiada</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="noticia-text">
+                    <p>Além da parte técnica, os alunos também destacaram a importância social do projeto. "Muitas pessoas não têm acesso a equipamentos básicos para estudos e trabalho. Estamos ajudando a mudar essa realidade", comentou uma das participantes.</p>
+                    
+                    <p>Até o momento, o projeto já doou mais de 1.000 computadores e beneficiou diretamente 50 alunos através de suas ações de capacitação.</p>
+                </div>
+                
+                <div class="noticia-share">
+                    <span>Compartilhe:</span>
+                    <div class="share-buttons">
+                        <a href="#" class="share-button whatsapp">
+                            <img src="../assets/images/whatsapp.png" alt="WhatsApp">
+                        </a>
+                        <a href="#" class="share-button facebook">
+                            <img src="../assets/images/logo-do-facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="share-button twitter">
+                            <img src="../assets/images/twitter.png" alt="Twitter">
+                        </a>
                     </div>
-                </div> 
+                </div>
             </div>
-    </section>
+        </article>
+        
+        <section class="related-news">
+            <h2 class="related-title">Notícias Relacionadas</h2>
+            
+            <div class="related-grid">
+                <article class="related-card">
+                    <a href="html_area_noticias/areaNoticias1.html" class="related-image">
+                        <img src="../media/areaNoticias1.0.jpg" alt="Notícia relacionada">
+                    </a>
+                    <div class="related-content">
+                        <h3><a href="html_area_noticias/areaNoticias1.html">Título da Notícia Relacionada</a></h3>
+                        <span class="related-date">15 de março, 2022</span>
+                    </div>
+                </article>
+                
+                <article class="related-card">
+                    <a href="html_area_noticias/areaNoticias1.html" class="related-image">
+                        <img src="../media/areaNoticias1.0.jpg" alt="Notícia relacionada">
+                    </a>
+                    <div class="related-content">
+                        <h3><a href="html_area_noticias/areaNoticias1.html">Outra Notícia Relacionada</a></h3>
+                        <span class="related-date">10 de março, 2022</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
-    <section class="img-body mais">
-        <p>No dia 21 de fevereiro alguns alunos do Projeto PC Solidário fizeram uma apresentação geral dos estágios que foram ocorrendo um por um de uma forma detalhada.</p>
-        <div class="container-body mais">
-            <div class="img-container mais">
-                <img src="../media/areaNoticias1.1.jpg" alt="">
-            </div>
-            <div class="img-container mais">
-                <img src="../media/areaNoticias1.2.jpg" alt="">
-            </div>
-            <div class="img-container mais">
-                <img src="../media/areaNoticias1.3.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    
     <footer>
-        <div class="header footer">
-            <div class="logo footer">
-                <a href=""><img src="../assets/images/logoPCSOLIDARIO02.png" alt="Logo do Site"></a>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index2.html"><img src="../assets/images/logoPCSOLIDARIO02.png" alt="Logo PC Solidário"></a>
             </div>
-                <div class="meio--tel-email-end">
-                    <div class="tel-email">
-                        <img src="../assets/images/telefone.png" alt="">
-                        <div class="num-tel"><span class="tel">(91)98472-4793</span></div>
-                        <img src="../assets/images/o-email.png" alt="">
-                        <div><span class="email">projetopcsolidario@gmail.com</span></div>
-                    </div>
-                    <div class="end">
-                        <img src="../assets/images/fixar-mapa.png" alt="">
-                        <div><span>Rua Aristides Lobo, 1058 - Bairro do Reduto, Belém - PA</span></div>                        
-                    </div>
-                    <div class="copyright">
-                        <h2>&copy; 2024 PC Solidário. Todos os direitos reservados</h2>
-                        <a href="#">Desenvolvido por Dream Team</a>
-                    </div>
-                </div>               
-            <div class="icons footer">
-                <a href=""><img src="../assets/images/whatsapp.png" alt="icon_twitter "></a>
-                <a href=""><img src="../assets/images/instagram.png" alt="icon_twitter "></a>
-                <a href=""><img src="../assets/images/logo-do-facebook.png" alt="icon_twitter "></a>
-                <a href=""><img src="../assets/images/twitter.png" alt="icon_twitter "></a>
+            
+            <div class="footer-contacts">
+                <div class="contact-item">
+                    <img src="../assets/images/telefone.png" alt="Telefone">
+                    <span>(91) 98472-4793</span>
+                </div>
+                <div class="contact-item">
+                    <img src="../assets/images/o-email.png" alt="E-mail">
+                    <span>projetopcsolidario@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <img src="../assets/images/fixar-mapa.png" alt="Endereço">
+                    <span>Rua Aristides Lobo, 1058 - Bairro do Reduto, Belém - PA</span>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 PC Solidário. Todos os direitos reservados</p>
+                    <a href="#">Desenvolvido por Dream Team</a>
+                </div>
             </div>
+            
+            <div class="footer-social">
+                <a href="#" aria-label="WhatsApp"><img src="../assets/images/whatsapp.png" alt="WhatsApp"></a>
+                <a href="#" aria-label="Instagram"><img src="../assets/images/instagram.png" alt="Instagram"></a>
+                <a href="#" aria-label="Facebook"><img src="../assets/images/logo-do-facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="Twitter"><img src="../assets/images/twitter.png" alt="Twitter"></a>
+            </div>
+            
+        
         </div>
-      </footer>
+    </footer>
+
+    <script>
+        // Menu Hamburguer
+        const btnMobile = document.getElementById('btn-mobile');
+        const nav = document.getElementById('nav');
+        
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault();
+            nav.classList.toggle('active');
+            const isActive = nav.classList.contains('active');
+            btnMobile.setAttribute('aria-expanded', isActive);
+            document.body.style.overflow = isActive ? 'hidden' : 'auto';
+        }
+        
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+        
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('#nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                btnMobile.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = 'auto';
+            });
+        });
+    </script>
 </body>
 </html>
